@@ -2,132 +2,321 @@
   {
     "id": "001",
     "text": "Chocolate or vanilla?",
-    "answer-a": "Chocolate",
-    "answer-a-id": "002",
-    "answer-b": "Vanilla",
-    "answer-b-id": "007",
-    "answer-c": "Neither",
-    "answer-c-id": "004"
+    "name": "flavour",
+    "options": [
+      {
+        "parent": "001",
+        "value": "chocolate",
+        "label": "Chocolate",
+        "next": "002"
+      },
+      {
+        "parent": "001",
+        "value": "vanilla",
+        "label": "Vanilla",
+        "next": "007"
+      },
+      {
+        "parent": "001",
+        "value": "neither",
+        "label": "Neither",
+        "next": "011"
+      }
+    ]
   },
   {
     "id": "002",
     "text": "Red velvet, chocolate, or blackout?",
-    "answer-a": "Red velvet",
-    "answer-a-id": "003",
-    "answer-b": "Chocolate",
-    "answer-b-id": "004",
-    "answer-c": "Blackout",
-    "answer-c-id": "006"
+    "name": "chocolate_flavour_type",
+    "options": [
+      {
+        "parent": "002",
+        "value": "rev_velvet",
+        "label": "Red velvet",
+        "next": "003"
+      },
+      {
+        "parent": "002",
+        "value": "chocolate",
+        "label": "Chocolate",
+        "next": "004"
+      },
+      {
+        "parent": "002",
+        "value": "blackout",
+        "label": "Blackout",
+        "next": "006"
+      }
+    ]
   },
   {
     "id": "003",
     "text": "Cream cheese or basic buttercream?",
-    "answer-a": "Cream cheese",
-    "answer-a-id": "014",
-    "answer-b": "basic buttercream",
-    "answer-b-id": "014"
+    "name": "red_velvet_icing",
+    "options": [
+      {
+        "parent": "003",
+        "value": "Cream Cheese",
+        "label": "Cream Cheese",
+        "next": "014"
+      },
+      {
+        "parent": "003",
+        "value": "basic buttercream",
+        "label": "Basic Buttercream",
+        "next": "014"
+      }
+    ]
   },
   {
     "id": "004",
     "text": "Basic buttercream, swiss meringue, cream cheese or neither (chocolate or ganache)?",
-    "answer-a": "Basic Buttercream",
-    "answer-a-id": "014",
-    "answer-b": "Swiss Meringue",
-    "answer-b-id": "014",
-    "answer-c": "Cream Cheese",
-    "answer-c-id": "014",
-    "answer-d": "Neither",
-    "answer-d-id": "005"
+    "name": "Chocolate_icing",
+    "options": [
+      {
+        "parent": "004",
+        "value": "Basic Buttercream",
+        "label": "Basic Buttercream",
+        "next": "014"
+      },
+      {
+        "parent": "004",
+        "value": "Swiss Meringue",
+        "label": "Swiss Meringue",
+        "next": "014"
+      },
+      {
+        "parent": "004",
+        "value": "Swiss Cheese",
+        "label": "Swiss Cheese",
+        "next": "014"
+      },
+      {
+        "parent": "004",
+        "value": "Neither",
+        "label": "Neither",
+        "next": "005"
+      }
+    ]
   },
   {
     "id": "005",
     "text": "Chocolate or Ganache??",
-    "answer-a": "Chocolate",
-    "answer-a-id": "014",
-    "answer-b": "Ganache",
-    "answer-b-id": "014"
+    "name": "blackout_icing",
+    "options": [
+      {
+        "parent": "005",
+        "value": "Chocolate",
+        "label": "Chocolate",
+        "next": "014"
+      },
+      {
+        "parent": "005",
+        "value": "Ganache",
+        "label": "Ganache",
+        "next": "014"
+      }
+    ]
   },
   {
     "id": "006",
     "text": "Whipped cream, berry, chocolate, or ganache?",
-    "answer-a": "Whipped Cream",
-    "answer-a-id": "014",
-    "answer-b": "Berry",
-    "answer-b-id": "014",
-    "answer-c": "Chocolate",
-    "answer-c-id": "014",
-    "answer-d": "Ganache",
-    "answer-d-id": "014"
+    "name": "",
+    "options": [
+      {
+        "parent": "006",
+        "value": "Whipped Cream",
+        "label": "Whipped Cream",
+        "next": "014"
+      },
+      {
+        "parent": "006",
+        "value": "Berry Buttercream",
+        "label": "Berry Buttercream",
+        "next": "014"
+      },
+      {
+        "parent": "006",
+        "value": "Chocolate",
+        "label": "Chocolate",
+        "next": "014"
+      },
+      {
+        "parent": "006",
+        "value": "Ganache",
+        "label": "Ganache",
+        "next": "014"
+      }
+    ]
   },
   {
     "id": "007",
     "text": "Yellow Sponge or Funfetti?",
-    "answer-a": "Yellow Sponge",
-    "answer-a-id": "008",
-    "answer-b": "Funfetti",
-    "answer-b-id": "010"
+    "name": "vanilla_flavour_type",
+    "options": [
+      {
+        "parent": "007",
+        "value": "yellow_sponge",
+        "label": "Yellow Sponge",
+        "next": "008"
+      },
+      {
+        "parent": "007",
+        "value": "funfetti",
+        "label": "Funfetti",
+        "next": "010"
+      }
+    ]
   },
   {
     "id": "008",
     "text": "Basic buttercream, whipped cream, swiss meringue, or neither (chocolate or berry)?",
-    "answer-a": "Basic Buttercream",
-    "answer-a-id": "014",
-    "answer-b": "Whipped Cream",
-    "answer-b-id": "014",
-    "answer-c": "Swiss Meringue",
-    "answer-c-id": "014",
-    "answer-d": "Neither",
-    "answer-d-id": "009"
+    "name": "Yellow_sponge_icing_type",
+    "options": [
+      {
+        "parent": "008",
+        "value": "Basic Buttercream",
+        "label": "Basic Buttercream",
+        "next": "014"
+      },
+      {
+        "parent": "008",
+        "value": "Whipped Cream",
+        "label": "Whipped Cream",
+        "next": "014"
+      },
+      {
+        "parent": "008",
+        "value": "Swiss Meringue",
+        "label": "Swiss Meringue",
+        "next": "014"
+      },
+      {
+        "parent": "008",
+        "value": "neither",
+        "label": "Neither",
+        "next": "009"
+      }
+    ]
   },
   {
     "id": "009",
     "text": "Chocolate or Berry??",
-    "answer-a": "Chocolate",
-    "answer-a-id": "014",
-    "answer-b": "Berry",
-    "answer-b-id": "014"
+    "name": "Yellow_sponge_icing_type",
+    "options": [
+      {
+        "parent": "009",
+        "value": "Chocolate",
+        "label": "Chocolate",
+        "next": "014"
+      },
+      {
+        "parent": "009",
+        "value": "Berry Buttercream",
+        "label": "Berry Buttercream",
+        "next": "014"
+      }
+    ]
   },
   {
     "id": "010",
     "text": "Basic buttercream, chocolate buttercream, or berry buttercream?",
-    "answer-a": "Basic buttercream",
-    "answer-a-id": "014",
-    "answer-b": "chocolate buttercream",
-    "answer-b-id": "014",
-    "answer-c": "berry buttercream",
-    "answer-c-id": "014"
+    "name": "buttercream_type",
+    "options": [
+      {
+        "parent": "010",
+        "value": "basic_buttercream",
+        "label": "Basic Buttercream",
+        "next": "014"
+      },
+      {
+        "parent": "010",
+        "value": "chocolate_buttercream",
+        "label": "Chocolate Buttercream",
+        "next": "014"
+      },
+      {
+        "parent": "010",
+        "value": "berry_buttercream",
+        "label": "Berry Buttercream",
+        "next": "014"
+      }
+    ]
   },
   {
     "id": "011",
     "text": "Carrot or Lemon?",
-    "answer-a": "Carrot",
-    "answer-a-id": "012",
-    "answer-b": "Lemon",
-    "answer-b-id": "013"
+    "name": "flavour",
+    "options": [
+      {
+        "parent": "011",
+        "value": "Carrot",
+        "label": "Carrot",
+        "next": "012"
+      },
+      {
+        "parent": "011",
+        "value": "Lemon",
+        "label": "Lemon",
+        "next": "013"
+      }
+    ]
   },
   {
     "id": "012",
     "text": "Cream cheese or basic buttercream?",
-    "answer-a": "Cream cheese",
-    "answer-a-id": "014",
-    "answer-b": "Basic buttercream",
-    "answer-b-id": "014"
+    "name": "Carrot_icing_type",
+    "options": [
+      {
+        "parent": "012",
+        "value": "Cream Cheese",
+        "label": "Cream Cheese",
+        "next": "014"
+      },
+      {
+        "parent": "012",
+        "value": "Basic Buttercream",
+        "label": "Basic Buttercream",
+        "next": "014"
+      }
+    ]
   },
   {
     "id": "013",
     "text": "Basic buttercream, swiss meringue, cream cheese, or berry?",
-    "answer-a": "Basic buttercream",
-    "answer-a-id": "014",
-    "answer-b": "swiss meringue",
-    "answer-b-id": "014",
-    "answer-c": "cream cheese",
-    "answer-c-id": "014",
-    "answer-d": "berry",
-    "answer-d-id": "014"
+    "name": "",
+    "options": [
+      {
+        "parent": "013",
+        "value": "Basic Buttercream",
+        "label": "Basic Buttercream",
+        "next": "014"
+      },
+      {
+        "parent": "013",
+        "value": "Swiss Meringue",
+        "label": "Swiss Meringue",
+        "next": "014"
+      },
+      {
+        "parent": "013",
+        "value": "Cream Cheese",
+        "label": "Cream Cheese",
+        "next": "014"
+      },
+      {
+        "parent": "013",
+        "value": "Berry Buttercream",
+        "label": "Berry Buttercream",
+        "next": "014"
+      }
+    ]
   },
   {
     "id": "014",
     "text": "style question",
+    "name": "",
+    "options": [],
     "answer-a": "text",
     "answer-a-id": "001",
     "answer-b": "text",
@@ -138,8 +327,10 @@
     "answer-d-id": "001"
   },
   {
-    "id": "000",
+    "id": "015",
     "text": "text",
+    "name": "",
+    "options": [],
     "answer-a": "text",
     "answer-a-id": "001",
     "answer-b": "text",
