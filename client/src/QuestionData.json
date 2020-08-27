@@ -314,30 +314,888 @@
   },
   {
     "id": "014",
-    "text": "style question",
-    "name": "",
-    "options": [],
-    "answer-a": "text",
-    "answer-a-id": "001",
-    "answer-b": "text",
-    "answer-b-id": "001",
-    "answer-c": "text",
-    "answer-c-id": "001",
-    "answer-d": "text",
-    "answer-d-id": "001"
+    "text": "Exclude fruity cake?",
+    "name": "cake_style_ecluder",
+    "options": [
+      {
+        "parent": "014",
+        "value": "Yes",
+        "label": "Yes",
+        "next": "015"
+      },
+      {
+        "parent": "014",
+        "value": "No",
+        "label": "No",
+        "next": "031"
+      }
+    ]
   },
   {
     "id": "015",
-    "text": "text",
-    "name": "",
-    "options": [],
-    "answer-a": "text",
-    "answer-a-id": "001",
-    "answer-b": "text",
-    "answer-b-id": "001",
-    "answer-c": "text",
-    "answer-c-id": "001",
-    "answer-d": "text",
-    "answer-d-id": "001"
+    "text": "Exclude which styles?",
+    "name": "cake_style_excluder",
+    "options": [
+      {
+        "parent": "015",
+        "value": "Exclude maximalist, floral",
+        "label": "Exclude maximalist, floral",
+        "next": "016"
+      },
+      {
+        "parent": "015",
+        "value": "Exclude classic, minimalist",
+        "label": "Exclude classic, minimalist",
+        "next": "021"
+      },
+      {
+        "parent": "015",
+        "value": "Exclude the works, maximalist",
+        "label": "Exclude the works, maximalist",
+        "next": "026"
+      }
+    ]
+  },
+  {
+    "id": "016",
+    "text": "Exclude which styles?",
+    "name": "cake_style_excluder",
+    "options": [
+      {
+        "parent": "016",
+        "value": "Exclude the works",
+        "label": "Exclude the works",
+        "next": "017"
+      },
+      {
+        "parent": "016",
+        "value": "Exclude minimalist",
+        "label": "Exclude minimalist",
+        "next": "018"
+      },
+      {
+        "parent": "016",
+        "value": "Exclude classic",
+        "label": "Exclude classic",
+        "next": "019"
+      },
+      {
+        "parent": "016",
+        "value": "Exclude abstract",
+        "label": "Exclude abstract",
+        "next": "020"
+      }
+    ]
+  },
+  {
+    "id": "017",
+    "text": "Minimalist, classic, or abstract?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "017",
+        "value": "Minimalist",
+        "label": "Minimalist",
+        "next": "submit"
+      },
+      {
+        "parent": "017",
+        "value": "Classic",
+        "label": "Classic",
+        "next": "submit"
+      },
+      {
+        "parent": "017",
+        "value": "Abstract",
+        "label": "Abstract",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "018",
+    "text": "The works, classic, or abstract?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "018",
+        "value": "The works",
+        "label": "The works",
+        "next": "submit"
+      },
+      {
+        "parent": "018",
+        "value": "Classic",
+        "label": "Classic",
+        "next": "submit"
+      },
+      {
+        "parent": "018",
+        "value": "Abstract",
+        "label": "Abstract",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "019",
+    "text": "The works, minimalist, or abstract?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "019",
+        "value": "The works",
+        "label": "The works",
+        "next": "submit"
+      },
+      {
+        "parent": "019",
+        "value": "Minimalist",
+        "label": "Minimalist",
+        "next": "submit"
+      },
+      {
+        "parent": "019",
+        "value": "Abstract",
+        "label": "Abstract",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "020",
+    "text": "The works, minimalist, or classic?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "020",
+        "value": "The works",
+        "label": "The works",
+        "next": "submit"
+      },
+      {
+        "parent": "020",
+        "value": "Minimalist",
+        "label": "Minimalist",
+        "next": "submit"
+      },
+      {
+        "parent": "020",
+        "value": "Classic",
+        "label": "Classic",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "021",
+    "text": "Which to exclude?",
+    "name": "cake_style_excluder",
+    "options": [
+      {
+        "parent": "021",
+        "value": "Exclude the works",
+        "label": "Exclude the works",
+        "next": "022"
+      },
+      {
+        "parent": "021",
+        "value": "Exclude maximalist",
+        "label": "Exclude maximalist",
+        "next": "023"
+      },
+      {
+        "parent": "021",
+        "value": "Exclude floral",
+        "label": "Exclude floral",
+        "next": "024"
+      },
+      {
+        "parent": "021",
+        "value": "Exclude abstract",
+        "label": "Exclude abstract",
+        "next": "025"
+      }
+    ]
+  },
+  {
+    "id": "022",
+    "text": "Maximalist, floral, or abstract?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "022",
+        "value": "Maximalist",
+        "label": "Maximalist",
+        "next": "submit"
+      },
+      {
+        "parent": "022",
+        "value": "Floral",
+        "label": "Floral",
+        "next": "submit"
+      },
+      {
+        "parent": "022",
+        "value": "Abstract",
+        "label": "Abstract",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "023",
+    "text": "The works, floral, or abstract?",
+    "name": "cake_style",
+    "options": [
+      {
+        "parent": "023",
+        "value": "The works",
+        "label": "The works",
+        "next": "submit"
+      },
+      {
+        "parent": "023",
+        "value": "Floral",
+        "label": "",
+        "next": "submit"
+      },
+      {
+        "parent": "023",
+        "value": "Abstract",
+        "label": "Abstract",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "024",
+    "text": "The works, maximalist, or abstract?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "024",
+        "value": "The works",
+        "label": "The works",
+        "next": "submit"
+      },
+      {
+        "parent": "024",
+        "value": "Maximalist",
+        "label": "Maximalist",
+        "next": "submit"
+      },
+      {
+        "parent": "024",
+        "value": "Abstract",
+        "label": "Abstract",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "025",
+    "text": "The works, maximalist, or floral?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "025",
+        "value": "The works",
+        "label": "The works",
+        "next": "submit"
+      },
+      {
+        "parent": "025",
+        "value": "Maximalist",
+        "label": "Maximalist",
+        "next": "submit"
+      },
+      {
+        "parent": "025",
+        "value": "Floral",
+        "label": "Floral",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "026",
+    "text": "Which to exclude?",
+    "name": "cake_style_excluder",
+    "options": [
+      {
+        "parent": "026",
+        "value": "Exclude minimalist",
+        "label": "Exclude minimalist",
+        "next": "027"
+      },
+      {
+        "parent": "026",
+        "value": "Exclude classic",
+        "label": "Exclude classic",
+        "next": "028"
+      },
+      {
+        "parent": "026",
+        "value": "Exclude floral",
+        "label": "Exclude floral",
+        "next": "029"
+      },
+      {
+        "parent": "026",
+        "value": "Exclude abstract",
+        "label": "Exclude abstract",
+        "next": "030"
+      }
+    ]
+  },
+  {
+    "id": "027",
+    "text": "Classic, floral, or abstract?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "027",
+        "value": "Classic",
+        "label": "Classic",
+        "next": "submit"
+      },
+      {
+        "parent": "027",
+        "value": "Floral",
+        "label": "Floral",
+        "next": "submit"
+      },
+      {
+        "parent": "027",
+        "value": "Abstract",
+        "label": "Abstract",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "028",
+    "text": "Minimalist, floral, or abstract?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "028",
+        "value": "Minimalist",
+        "label": "Minimalist",
+        "next": "submit"
+      },
+      {
+        "parent": "028",
+        "value": "Floral",
+        "label": "Floral",
+        "next": "submit"
+      },
+      {
+        "parent": "028",
+        "value": "Abstract",
+        "label": "Abstract",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "029",
+    "text": "Minimalist, classic, or abstract?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "029",
+        "value": "Minimalist",
+        "label": "Minimalist",
+        "next": "submit"
+      },
+      {
+        "parent": "029",
+        "value": "Classic",
+        "label": "Classic",
+        "next": "submit"
+      },
+      {
+        "parent": "029",
+        "value": "Abstract",
+        "label": "Abstract",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "030",
+    "text": "Minimalist, classic, or floral?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "030",
+        "value": "Minimalist",
+        "label": "Minimalist",
+        "next": "submit"
+      },
+      {
+        "parent": "030",
+        "value": "Classic",
+        "label": "Classic",
+        "next": "submit"
+      },
+      {
+        "parent": "030",
+        "value": "Floral",
+        "label": "Floral",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "031",
+    "text": "Exclude which styles?",
+    "name": "cake_style_excluder",
+    "options": [
+      {
+        "parent": "031",
+        "value": "Maximalist, floral, or abstract",
+        "label": "Maximalist, floral, or abstract",
+        "next": "032"
+      },
+      {
+        "parent": "031",
+        "value": "Maximalist, the works, or fruity",
+        "label": "Maximalist, the works, or fruity",
+        "next": "037"
+      },
+      {
+        "parent": "031",
+        "value": "Minimalist, clasic, or abstract",
+        "label": "Minimalist, clasic, or abstract",
+        "next": "042"
+      }
+    ]
+  },
+  {
+    "id": "032",
+    "text": "Which to exclude?",
+    "name": "cake_style_excluder",
+    "options": [
+      {
+        "parent": "032",
+        "value": "Exclude the works",
+        "label": "Exclude the works",
+        "next": "033"
+      },
+      {
+        "parent": "032",
+        "value": "Exclude minimalist",
+        "label": "Exclude minimalist",
+        "next": "034"
+      },
+      {
+        "parent": "032",
+        "value": "Exclude classic",
+        "label": "Exclude classic",
+        "next": "035"
+      },
+      {
+        "parent": "032",
+        "value": "Exclude fruity",
+        "label": "Exclude fruity",
+        "next": "036"
+      }
+    ]
+  },
+  {
+    "id": "033",
+    "text": "Minimalist, classic, or fruity?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "033",
+        "value": "Minimalist",
+        "label": "Minimalist",
+        "next": "submit"
+      },
+      {
+        "parent": "033",
+        "value": "Classic",
+        "label": "Classic",
+        "next": "submit"
+      },
+      {
+        "parent": "033",
+        "value": "Fruity",
+        "label": "Fruity",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "034",
+    "text": "The works, classic, or fruity?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "034",
+        "value": "The works",
+        "label": "The works",
+        "next": "submit"
+      },
+      {
+        "parent": "034",
+        "value": "Classic",
+        "label": "Classic",
+        "next": "submit"
+      },
+      {
+        "parent": "034",
+        "value": "Fruity",
+        "label": "Fruity",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "035",
+    "text": "The works, minimalist, or fruity?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "035",
+        "value": "The works",
+        "label": "The works",
+        "next": "submit"
+      },
+      {
+        "parent": "035",
+        "value": "Minimalist",
+        "label": "Minimalist",
+        "next": "submit"
+      },
+      {
+        "parent": "035",
+        "value": "Fruity",
+        "label": "Fruity",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "036",
+    "text": "The works, minimalist, or classic?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "036",
+        "value": "The works",
+        "label": "The works",
+        "next": "submit"
+      },
+      {
+        "parent": "036",
+        "value": "Minimalist",
+        "label": "Minimalist",
+        "next": "submit"
+      },
+      {
+        "parent": "036",
+        "value": "Classic",
+        "label": "Classic",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "037",
+    "text": "Which to exclude?",
+    "name": "cake_style_excluder",
+    "options": [
+      {
+        "parent": "037",
+        "value": "Exclude minimalist",
+        "label": "Exclude minimalist",
+        "next": "038"
+      },
+      {
+        "parent": "037",
+        "value": "Exclude classic",
+        "label": "Exclude classic",
+        "next": "039"
+      },
+      {
+        "parent": "037",
+        "value": "Exclude floral",
+        "label": "Exclude floral",
+        "next": "040"
+      },
+      {
+        "parent": "037",
+        "value": "Exclude abstract",
+        "label": "Exclude abstract",
+        "next": "041"
+      }
+    ]
+  },
+  {
+    "id": "038",
+    "text": "Classic, floral, or abstract?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "038",
+        "value": "Classic",
+        "label": "Classic",
+        "next": "submit"
+      },
+      {
+        "parent": "038",
+        "value": "Floral",
+        "label": "Floral",
+        "next": "submit"
+      },
+      {
+        "parent": "038",
+        "value": "Abstract",
+        "label": "Abstract",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "039",
+    "text": "Floral, abstract, or minimalist?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "039",
+        "value": "Floral",
+        "label": "Floral",
+        "next": "submit"
+      },
+      {
+        "parent": "039",
+        "value": "Abstract",
+        "label": "Abstract",
+        "next": "submit"
+      },
+      {
+        "parent": "039",
+        "value": "Minimalist",
+        "label": "Minimalist",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "040",
+    "text": "Classic, abstract, or minimalist?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "040",
+        "value": "Classic",
+        "label": "Classic",
+        "next": "submit"
+      },
+      {
+        "parent": "040",
+        "value": "Abstract",
+        "label": "Abstract",
+        "next": "submit"
+      },
+      {
+        "parent": "040",
+        "value": "Minimalist",
+        "label": "Minimalist",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "041",
+    "text": "Classic, floral, or minimalist?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "041",
+        "value": "Classic",
+        "label": "Classic",
+        "next": "submit"
+      },
+      {
+        "parent": "041",
+        "value": "Floral",
+        "label": "Floral",
+        "next": "submit"
+      },
+      {
+        "parent": "041",
+        "value": "Minimalist",
+        "label": "Minimalist",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "042",
+    "text": "Which to exclude?",
+    "name": "cake_style_excluder",
+    "options": [
+      {
+        "parent": "042",
+        "value": "Exclude the works",
+        "label": "Exclude the works",
+        "next": "043"
+      },
+      {
+        "parent": "042",
+        "value": "Exclude maximalist",
+        "label": "Exclude maximalist",
+        "next": "044"
+      },
+      {
+        "parent": "042",
+        "value": "Exclude floral",
+        "label": "Exclude floral",
+        "next": "045"
+      },
+      {
+        "parent": "042",
+        "value": "Exclude fruity",
+        "label": "Exclude fruity",
+        "next": "046"
+      }
+    ]
+  },
+  {
+    "id": "043",
+    "text": "Maximalist, floral, or fruity?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "043",
+        "value": "Maximalist",
+        "label": "Maximalist",
+        "next": "submit"
+      },
+      {
+        "parent": "043",
+        "value": "Floral",
+        "label": "Floral",
+        "next": "submit"
+      },
+      {
+        "parent": "043",
+        "value": "Fruity",
+        "label": "Fruity",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "044",
+    "text": "The works, floral, or fruity?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "044",
+        "value": "The works",
+        "label": "The works",
+        "next": "submit"
+      },
+      {
+        "parent": "044",
+        "value": "Floral",
+        "label": "Floral",
+        "next": "submit"
+      },
+      {
+        "parent": "044",
+        "value": "Fruity",
+        "label": "Fruity",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "045",
+    "text": "Maximalist, fruity, or the works?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "045",
+        "value": "Maximalist",
+        "label": "Maximalist",
+        "next": "submit"
+      },
+      {
+        "parent": "045",
+        "value": "Fruity",
+        "label": "Fruity",
+        "next": "submit"
+      },
+      {
+        "parent": "045",
+        "value": "The works",
+        "label": "The works",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "046",
+    "text": "Maximalist, the works, or floral?",
+    "name": "cake_style_selector",
+    "options": [
+      {
+        "parent": "046",
+        "value": "Maximalist",
+        "label": "Maximalist",
+        "next": "submit"
+      },
+      {
+        "parent": "046",
+        "value": "The works",
+        "label": "The works",
+        "next": "submit"
+      },
+      {
+        "parent": "046",
+        "value": "Floral",
+        "label": "Floral",
+        "next": "submit"
+      }
+    ]
+  },
+  {
+    "id": "COPY_ME",
+    "text": "",
+    "name": "cake_style",
+    "options": [
+      {
+        "parent": "",
+        "value": "",
+        "label": "",
+        "next": ""
+      },
+      {
+        "parent": "",
+        "value": "",
+        "label": "",
+        "next": ""
+      },
+      {
+        "parent": "",
+        "value": "",
+        "label": "",
+        "next": ""
+      },
+      {
+        "parent": "",
+        "value": "",
+        "label": "",
+        "next": ""
+      }
+    ]
   }
 ]
