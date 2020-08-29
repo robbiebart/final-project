@@ -6,19 +6,19 @@
     "options": [
       {
         "parent": "001",
-        "value": "chocolate",
-        "label": "Chocolate",
+        "value": "Choco",
+        "label": "Choco",
         "next": "002"
       },
       {
         "parent": "001",
-        "value": "vanilla",
+        "value": "Vanilla",
         "label": "Vanilla",
         "next": "007"
       },
       {
         "parent": "001",
-        "value": "neither",
+        "value": "Neither",
         "label": "Neither",
         "next": "011"
       }
@@ -31,19 +31,19 @@
     "options": [
       {
         "parent": "002",
-        "value": "rev_velvet",
+        "value": "Red Velvet",
         "label": "Red velvet",
         "next": "003"
       },
       {
         "parent": "002",
-        "value": "chocolate",
+        "value": "Chocolate",
         "label": "Chocolate",
         "next": "004"
       },
       {
         "parent": "002",
-        "value": "blackout",
+        "value": "Blackout",
         "label": "Blackout",
         "next": "006"
       }
@@ -87,8 +87,8 @@
       },
       {
         "parent": "004",
-        "value": "Swiss Cheese",
-        "label": "Swiss Cheese",
+        "value": "Cream Cheese",
+        "label": "Cream Cheese",
         "next": "014"
       },
       {
