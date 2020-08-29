@@ -7,14 +7,30 @@ import GlobalStyle from "./GlobalStyle";
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState("001");
   const [answers, updateAnswers] = useState([]);
+  const [error, setError] = useState(null);
   const handleAnswer = (answer) => {
     // TODO: handle viewport scroll
     updateAnswers([...answers, answer]);
     setCurrentQuestion(answer.next);
   };
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     // do database submission!
-    // eg: fetch('/api_url', { answers })
+    console.dir(answers);
+    try {
+      const response = await fetch("/cake", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          // 'Authorization': `Bearer ${store.get('token')}`
+        },
+        body: JSON.stringify(answers),
+      });
+
+      const created = await response.json();
+      console.dir(created);
+    } catch (error) {
+      console.error(error);
+    }
   };
   return (
     <Grid>
@@ -25,16 +41,24 @@ function App() {
       <Nav>
         <h2>Nav Bar</h2>
       </Nav>
-      <QuizTitle>Cake questionaire</QuizTitle>
-      <Answers answers={answers} />
-      <Question
-        setQuestion={setCurrentQuestion}
-        questionId={currentQuestion}
-        handleAnswer={handleAnswer}
-      />
-      {currentQuestion === "submit" ? (
-        <button onClick={handleSubmit}>Submit</button>
-      ) : null}
+      <QuestionArea>
+        <QuizTitle>Cake questionaire</QuizTitle>
+        <Answers answers={answers} />
+        <Question
+          setQuestion={setCurrentQuestion}
+          questionId={currentQuestion}
+          handleAnswer={handleAnswer}
+        />
+        {currentQuestion === "submit" ? (
+          <SubmitButton onClick={handleSubmit}>Submit</SubmitButton>
+        ) : null}
+        {error && (
+          <>
+            <h4>Woops, failed to save this cake, it must be too lit</h4>
+            <p>{error.message}</p>
+          </>
+        )}
+      </QuestionArea>
     </Grid>
   );
 }
@@ -45,8 +69,10 @@ const Grid = styled.div`
   width: 100vw;
 
   display: grid;
-  grid-template-columns: [first] 100px [main-start] auto [main-end] 100px [end];
-  grid-template-rows: [row1-start] 25% [nav-start] 100px [third-line] 50px [fourth-line];
+  grid-template-columns: [first] 5vw [main-start] auto [main-end] 5vw [end];
+  grid-template-rows:
+    [row1-start] 20vh [nav-start] 100px [third-line] calc(100% - 75px)
+    [fourth-line];
   grid-auto-rows: minmax(300px, auto);
 `;
 
@@ -72,11 +98,19 @@ const Nav = styled.div`
   background: rgba(32, 48, 64, 1);
 `;
 
-const QuizTitle = styled.h2`
-  grid-column-start: main-start;
-  grid-column-end: main-end;
+const QuizTitle = styled.h2``;
 
+const QuestionArea = styled.div`
   grid-row-start: third-line;
+  grid-row-end: fourth-line;
+  grid-column-start: main-start;
+`;
+
+const SubmitButton = styled.button`
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: pink;
+  border-radius: 1px;
 `;
 
 export default App;

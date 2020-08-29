@@ -6,19 +6,19 @@
     "options": [
       {
         "parent": "001",
-        "value": "Choco",
-        "label": "Choco",
+        "value": "chocolate",
+        "label": "Chocolate",
         "next": "002"
       },
       {
         "parent": "001",
-        "value": "Vanilla",
+        "value": "vanilla",
         "label": "Vanilla",
         "next": "007"
       },
       {
         "parent": "001",
-        "value": "Neither",
+        "value": "neither_flavour",
         "label": "Neither",
         "next": "011"
       }
@@ -338,19 +338,19 @@
     "options": [
       {
         "parent": "015",
-        "value": "Exclude maximalist, floral",
+        "value": "exclude_max_floral",
         "label": "Exclude maximalist, floral",
         "next": "016"
       },
       {
         "parent": "015",
-        "value": "Exclude classic, minimalist",
+        "value": "exclude_min_classic",
         "label": "Exclude classic, minimalist",
         "next": "021"
       },
       {
         "parent": "015",
-        "value": "Exclude the works, maximalist",
+        "value": "exclude_max_works, ",
         "label": "Exclude the works, maximalist",
         "next": "026"
       }
