@@ -8,6 +8,10 @@ h1 {
   h2, h3 {
     font-family: 'Cabin', sans-serif;
   }
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export default GlobalStyle;

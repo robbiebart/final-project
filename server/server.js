@@ -1,38 +1,25 @@
+require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan");
 const PORT = 4000;
-const MongoClient = require("mongodb").MongoClient;
 const app = express();
 app.use(express.json());
 app.use(morgan("dev"));
+const initDB = require("./db");
 
-const { MONGO_URI } = process.env;
-// DB Setup
-// const assert = require('assert');
-// const url = process.env.MONGO_URI
-
-// Use connect method to connect to the server
-MongoClient.connect(MONGO_URI, { useUnifiedTopology: true }, function (
-  err,
-  client
-) {
-  // assert.equal(null, err);
-  if (err) {
-    console.error(err);
-  }
-  console.log(client ? "Connected to DB" : "DB connection failed");
-  let db;
-  if (client) {
-    db = client.db("cake");
-  }
+(async () => {
+  const db = await initDB();
+  const cakes = await db.collection("cake").find().toArray();
 
   app.get("/cake", async (req, res) => {
-    res.send("GET cakes");
+    const cakes = await db.collection("cake").find().toArray();
+    res.json(cakes);
   });
 
   app.post("/cake", async (req, res) => {
-    console.dir(req.body);
-    res.send("POST cake");
+    const insert = await db.collection("cake").insertOne({ answers: req.body });
+    const cakes = await db.collection("cake").find().toArray();
+    res.json(cakes);
   });
 
   app.post("/register", async (req, res) => {
@@ -50,7 +37,7 @@ MongoClient.connect(MONGO_URI, { useUnifiedTopology: true }, function (
   const server = app.listen(PORT, function () {
     console.info("🌍 Listening on port " + server.address().port);
   });
-});
+})();
 
 /* decide the structure of the website, what information you're gonna store, if there are users
 you're gonna need a users db

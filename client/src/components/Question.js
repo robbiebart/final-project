@@ -10,7 +10,7 @@ export default function Question({ setQuestion, questionId, handleAnswer }) {
   return (
     <QuestComponent>
       {activeQuestion && (
-        <div id={activeQuestion.name}>
+        <NextQuestion id={activeQuestion.name}>
           <p>{activeQuestion.text}</p>
           {activeQuestion.options.map((option) => (
             <div key={option.label}>
@@ -26,7 +26,7 @@ export default function Question({ setQuestion, questionId, handleAnswer }) {
               />
             </div>
           ))}
-        </div>
+        </NextQuestion>
       )}
     </QuestComponent>
   );
@@ -35,6 +35,10 @@ export default function Question({ setQuestion, questionId, handleAnswer }) {
 const QuestComponent = styled.div`
   grid-column-start: main-start;
   grid-column-end: main-end;
-
   grid-row-start: auto;
+`;
+
+const NextQuestion = styled.div`
+  border: solid blue 2px;
+  grid-row-start: {answers.length};
 `;
