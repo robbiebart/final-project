@@ -71,6 +71,5 @@ const RadioLabel = styled.label`
 
 const Radio = styled.input`
   cursor: pointer;
-  /* visibility: hidden; */
   color: gray;
 `;

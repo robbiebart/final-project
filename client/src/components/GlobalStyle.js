@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 h1 {
   font-family: 'Arvo', serif;
+  color: grey;
   }
 
   h2, h3, p {

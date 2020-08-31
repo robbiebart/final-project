@@ -16,5 +16,6 @@ export default function Answers({ answers }) {
 }
 
 const AnsComponent = styled.div`
+  border-bottom: solid lightgray 2px;
   height: 250px;
 `;

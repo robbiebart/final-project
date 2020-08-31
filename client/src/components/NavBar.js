@@ -31,6 +31,9 @@ const Wrapper = styled.div`
   justify-content: space-evenly;
 
   height: 100%;
+  margin: 1%;
+  border-top: solid 2px lightgray;
+  border-bottom: solid 2px lightgray;
 
   h2 {
     color: #f86624;

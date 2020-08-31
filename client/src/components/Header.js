@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <Banner>
-        <h1>best cake scenario!</h1>
+        <h1>best cake scenario</h1>
       </Banner>
       <Nav>
         <NavBar />
@@ -23,9 +23,13 @@ const Banner = styled.div`
   grid-row-start: row1-start;
   grid-row-end: nav-start;
 
+  /* background: rgb(253, 245, 233); */
+  background: #f86624;
+  color: white;
+
   h1 {
-    font-family: "Dancing Script", cursive;
-    font-size: 4em;
+    font-size: 3.5em;
+    color: white;
   }
 
   display: flex;
@@ -35,10 +39,11 @@ const Banner = styled.div`
 `;
 
 const Nav = styled.div`
-  grid-column-start: first;
-  grid-column-end: end;
+  grid-column-start: main-start;
+  grid-column-end: main-end;
 
   grid-row-start: nav-start;
   grid-row-end: third-line;
-  background: rgb(253, 245, 233);
+
+  /* overflow: hidden; */
 `;
