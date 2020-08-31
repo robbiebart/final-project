@@ -8,37 +8,69 @@ export default function Question({ setQuestion, questionId, handleAnswer }) {
     setActiveQuestion(questions.find((q) => q.id === questionId));
   }, [questionId]);
   return (
-    <QuestComponent>
+    <QuestionWrapper>
       {activeQuestion && (
-        <NextQuestion id={activeQuestion.name}>
-          <p>{activeQuestion.text}</p>
+        <CurrentQuestion id={activeQuestion.name}>
+          <QuestionText>{activeQuestion.text}</QuestionText>
           {activeQuestion.options.map((option) => (
-            <div key={option.label}>
-              <label htmlFor={`${option.value}_${option.next}`}>
-                {option.label}
-              </label>
-              <input
+            <RadioWrapper key={option.label}>
+              <Radio
                 type="radio"
                 id={`${option.value}_${option.next}`}
                 name={activeQuestion.name}
                 // checked="false"
                 onChange={() => handleAnswer(option)}
               />
-            </div>
+              <RadioLabel htmlFor={`${option.value}_${option.next}`}>
+                {option.label}
+              </RadioLabel>
+            </RadioWrapper>
           ))}
-        </NextQuestion>
+        </CurrentQuestion>
       )}
-    </QuestComponent>
+    </QuestionWrapper>
   );
 }
 
-const QuestComponent = styled.div`
+const QuestionWrapper = styled.div`
   grid-column-start: main-start;
   grid-column-end: main-end;
   grid-row-start: auto;
+
+  p {
+    color: gray;
+  }
 `;
 
-const NextQuestion = styled.div`
-  border: solid blue 2px;
-  grid-row-start: {answers.length};
+const CurrentQuestion = styled.div`
+  /* border: solid blue 2px; */
+`;
+
+const QuestionText = styled.p`
+  padding: 8px;
+  margin: 5px;
+  color: gray;
+`;
+
+const RadioWrapper = styled.div`
+  border: solid lightgray 1px;
+
+  border-radius: 5px;
+
+  padding: 8px;
+  margin: 5px;
+`;
+
+const RadioLabel = styled.label`
+  padding: 5px;
+
+  p {
+    color: gray;
+  }
+`;
+
+const Radio = styled.input`
+  cursor: pointer;
+  /* visibility: hidden; */
+  color: gray;
 `;

@@ -7,14 +7,14 @@ export default function Answers({ answers }) {
     const a = questions.find((q) => q.id === answer.parent);
     return (
       <AnsComponent key={answer.value}>
-        {a.text}
+        {/* {a.text}
         <br />
-        {answer.label}
+        {answer.label} */}
       </AnsComponent>
     );
   });
 }
 
 const AnsComponent = styled.div`
-  border: solid 1px black;
+  height: 250px;
 `;

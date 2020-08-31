@@ -2,17 +2,21 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Answers from "./Answers";
 import Question from "./Question";
+import Results from "./Results";
 
 export default function QuestionArea() {
   const [currentQuestion, setCurrentQuestion] = useState("001");
   const [answers, updateAnswers] = useState([]);
   const [error, setError] = useState(null);
+  const [results, setResults] = useState(false);
   const handleAnswer = (answer) => {
     // TODO: handle viewport scroll
     /*
     hook into handleanswer, in onSelect, then do scrolltintoview
-    var elmnt = document.getElementById("content");elmnt.scrollIntoView();
     */
+    // const elmnt = document.getElementById("Answers");
+    // elmnt.scrollIntoView();
+
     updateAnswers([...answers, answer]);
     setCurrentQuestion(answer.next);
   };
@@ -30,6 +34,7 @@ export default function QuestionArea() {
       });
 
       const created = await response.json();
+      setResults(!!created);
       console.dir(created);
     } catch (error) {
       console.error(error);
@@ -53,6 +58,7 @@ export default function QuestionArea() {
           <p>{error.message}</p>
         </>
       )}
+      {results && <Results answers={answers} />}
     </QuestionAreaWrapper>
   );
 }

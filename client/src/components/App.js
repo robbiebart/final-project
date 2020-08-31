@@ -13,37 +13,6 @@ import Order from "./Order";
 import QuestionArea from "./QuestionArea";
 
 function App() {
-  // const [currentQuestion, setCurrentQuestion] = useState("001");
-  // const [answers, updateAnswers] = useState([]);
-  // const [error, setError] = useState(null);
-  // const handleAnswer = (answer) => {
-  //   // TODO: handle viewport scroll
-  //   /*
-  //   hook into handleanswer, in onSelect, then do scrolltintoview
-  //   var elmnt = document.getElementById("content");elmnt.scrollIntoView();
-  //   */
-  //   updateAnswers([...answers, answer]);
-  //   setCurrentQuestion(answer.next);
-  // };
-  // const handleSubmit = async () => {
-  //   // do database submission!
-  //   console.dir(answers);
-  //   try {
-  //     const response = await fetch("/cake", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //         // 'Authorization': `Bearer ${store.get('token')}`
-  //       },
-  //       body: JSON.stringify(answers),
-  //     });
-
-  //     const created = await response.json();
-  //     console.dir(created);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
   return (
     <Router>
       <Grid>
@@ -56,28 +25,6 @@ function App() {
           <Route path="/order" exact component={Order} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/" component={QuestionArea} />
-          {/* <Route
-            path="/"
-            render={() => (
-              <QuestionArea>
-                <QuizTitle>Cake questionaire</QuizTitle>
-                <Answers answers={answers} />
-                <Question
-                  setQuestion={setCurrentQuestion}
-                  questionId={currentQuestion}
-                  handleAnswer={handleAnswer}
-                />
-                {currentQuestion === "submit" ? (
-                  <SubmitButton onClick={handleSubmit}>Submit</SubmitButton>
-                ) : null}
-                {error && (
-                  <>
-                    <h4>Woops, failed to save this cake, it must be too lit</h4>
-                    <p>{error.message}</p>
-                  </>
-                )}
-              </QuestionArea> }
-                )} />*/}
         </Switch>
       </Grid>
     </Router>
@@ -85,7 +32,7 @@ function App() {
 }
 
 const Grid = styled.div`
-  border: solid 2px red;
+  /* border: solid 2px red; */
   height: 100vh;
   width: 100vw;
 

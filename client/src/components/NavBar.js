@@ -6,19 +6,19 @@ export default function NavBar() {
   return (
     <Wrapper>
       <Link to="/about">
-        <h3>about</h3>
+        <h2>about</h2>
       </Link>
       <Link to="/cakes">
-        <h3>cakes</h3>
+        <h2>cakes</h2>
       </Link>
       <Link to="/quiz">
-        <h3>quiz</h3>
+        <h2>quiz</h2>
       </Link>
       <Link to="/order">
-        <h3>order</h3>
+        <h2>order</h2>
       </Link>
       <Link to="/contact">
-        <h3>contact</h3>
+        <h2>contact</h2>
       </Link>
     </Wrapper>
   );
@@ -31,4 +31,12 @@ const Wrapper = styled.div`
   justify-content: space-evenly;
 
   height: 100%;
+
+  h2 {
+    color: #f86624;
+
+    &:hover {
+      color: #f9c80e;
+    }
+  }
 `;
