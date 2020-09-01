@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 import NavBar from "./NavBar";
+import Title from "../assets/title.PNG";
 
 export default function Header() {
   return (
     <>
       <Banner>
-        <h1>best cake scenario</h1>
+        <Logo src={Title} alt="logo" />
       </Banner>
       <Nav>
         <NavBar />
@@ -24,7 +25,7 @@ const Banner = styled.div`
   grid-row-end: nav-start;
 
   /* background: rgb(253, 245, 233); */
-  background: #f86624;
+  background: #fbc9b5;
   color: white;
 
   h1 {
@@ -34,8 +35,12 @@ const Banner = styled.div`
 
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-evenly;
+`;
+
+const Logo = styled.img`
+  height: 25vh;
 `;
 
 const Nav = styled.div`

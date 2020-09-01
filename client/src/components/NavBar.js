@@ -36,7 +36,8 @@ const Wrapper = styled.div`
   border-bottom: solid 2px lightgray;
 
   h2 {
-    color: #f86624;
+    /* color: #f86624; */
+    color: #fbc9b5;
 
     &:hover {
       color: #f9c80e;

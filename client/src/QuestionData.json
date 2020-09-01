@@ -6,8 +6,8 @@
     "options": [
       {
         "parent": "001",
-        "value": "chocolate",
-        "label": "Chocolate",
+        "value": "choc",
+        "label": "Choc",
         "next": "002",
         "db_return": "excluder_flavour_value"
       },
@@ -38,15 +38,17 @@
         "label": "Red velvet",
         "next": "003",
         "db_return": "selector_flavour_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "002",
-        "value": "Chocolate",
+        "value": "chocolate",
         "label": "Chocolate",
         "next": "004",
         "db_return": "selector_flavour_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "002",
@@ -54,7 +56,8 @@
         "label": "Blackout",
         "next": "006",
         "db_return": "selector_flavour_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -69,7 +72,8 @@
         "label": "Cream Cheese",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "003",
@@ -77,7 +81,8 @@
         "label": "Basic Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -92,7 +97,8 @@
         "label": "Basic Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "004",
@@ -100,7 +106,8 @@
         "label": "Swiss Meringue",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "004",
@@ -108,7 +115,8 @@
         "label": "Cream Cheese",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "004",
@@ -121,7 +129,7 @@
   },
   {
     "id": "005",
-    "text": "Chocolate or Ganache??",
+    "text": "Chocolate or Ganache?",
     "name": "icing_selector",
     "options": [
       {
@@ -130,7 +138,8 @@
         "label": "Chocolate",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "005",
@@ -138,7 +147,8 @@
         "label": "Ganache",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -153,7 +163,8 @@
         "label": "Whipped Cream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "006",
@@ -161,7 +172,8 @@
         "label": "Berry Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "006",
@@ -169,7 +181,8 @@
         "label": "Chocolate",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "006",
@@ -177,7 +190,8 @@
         "label": "Ganache",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -192,7 +206,8 @@
         "label": "Yellow Sponge",
         "next": "008",
         "db_return": "selector_flavour_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "007",
@@ -200,7 +215,8 @@
         "label": "Funfetti",
         "next": "010",
         "db_return": "selector_flavour_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -215,7 +231,8 @@
         "label": "Basic Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "008",
@@ -223,7 +240,8 @@
         "label": "Whipped Cream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "008",
@@ -231,7 +249,8 @@
         "label": "Swiss Meringue",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "008",
@@ -253,7 +272,8 @@
         "label": "Chocolate",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "009",
@@ -261,7 +281,8 @@
         "label": "Berry Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -276,7 +297,8 @@
         "label": "Basic Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "010",
@@ -284,7 +306,8 @@
         "label": "Chocolate Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "010",
@@ -292,7 +315,8 @@
         "label": "Berry Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -307,7 +331,8 @@
         "label": "Carrot",
         "next": "012",
         "db_return": "selector_flavour_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "011",
@@ -315,7 +340,8 @@
         "label": "Lemon",
         "next": "013",
         "db_return": "selector_flavour_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -330,7 +356,8 @@
         "label": "Cream Cheese",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "012",
@@ -338,7 +365,8 @@
         "label": "Basic Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -353,7 +381,8 @@
         "label": "Basic Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "013",
@@ -361,7 +390,8 @@
         "label": "Swiss Meringue",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "013",
@@ -369,7 +399,8 @@
         "label": "Cream Cheese",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "013",
@@ -377,7 +408,8 @@
         "label": "Berry Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -476,7 +508,8 @@
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "017",
@@ -484,7 +517,8 @@
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "017",
@@ -492,7 +526,8 @@
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -507,7 +542,8 @@
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "018",
@@ -515,7 +551,8 @@
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "018",
@@ -523,7 +560,8 @@
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -538,7 +576,8 @@
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "019",
@@ -546,7 +585,8 @@
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "019",
@@ -554,7 +594,8 @@
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -632,7 +673,8 @@
         "label": "Maximalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "022",
@@ -640,7 +682,8 @@
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "022",
@@ -648,7 +691,8 @@
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -663,7 +707,8 @@
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "023",
@@ -671,7 +716,8 @@
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "023",
@@ -679,7 +725,8 @@
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -694,7 +741,8 @@
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "024",
@@ -702,7 +750,8 @@
         "label": "Maximalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "024",
@@ -710,7 +759,8 @@
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -725,7 +775,8 @@
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "025",
@@ -733,7 +784,8 @@
         "label": "Maximalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "025",
@@ -741,7 +793,8 @@
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -791,7 +844,8 @@
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "027",
@@ -799,7 +853,8 @@
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "027",
@@ -807,7 +862,8 @@
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -822,7 +878,8 @@
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "028",
@@ -830,7 +887,8 @@
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "028",
@@ -838,7 +896,8 @@
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -853,7 +912,8 @@
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "029",
@@ -861,7 +921,8 @@
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "029",
@@ -869,7 +930,8 @@
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -884,7 +946,8 @@
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "030",
@@ -892,7 +955,8 @@
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "030",
@@ -900,7 +964,8 @@
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -978,7 +1043,8 @@
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "033",
@@ -986,7 +1052,8 @@
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "033",
@@ -994,7 +1061,8 @@
         "label": "Fruity",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -1009,7 +1077,8 @@
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "034",
@@ -1017,7 +1086,8 @@
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "034",
@@ -1025,7 +1095,8 @@
         "label": "Fruity",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -1040,7 +1111,8 @@
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "035",
@@ -1048,7 +1120,8 @@
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "035",
@@ -1056,7 +1129,8 @@
         "label": "Fruity",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -1071,7 +1145,8 @@
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "036",
@@ -1079,7 +1154,8 @@
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "036",
@@ -1087,7 +1163,8 @@
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -1137,7 +1214,8 @@
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "038",
@@ -1145,7 +1223,8 @@
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "038",
@@ -1153,7 +1232,8 @@
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -1168,7 +1248,8 @@
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "039",
@@ -1176,7 +1257,8 @@
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "039",
@@ -1184,7 +1266,8 @@
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -1199,7 +1282,8 @@
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "040",
@@ -1207,7 +1291,8 @@
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "040",
@@ -1215,7 +1300,8 @@
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -1230,7 +1316,8 @@
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "041",
@@ -1238,7 +1325,8 @@
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "041",
@@ -1246,7 +1334,8 @@
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -1296,7 +1385,8 @@
         "label": "Maximalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "043",
@@ -1304,7 +1394,8 @@
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "043",
@@ -1312,7 +1403,8 @@
         "label": "Fruity",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -1327,7 +1419,8 @@
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "044",
@@ -1335,7 +1428,8 @@
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "044",
@@ -1343,7 +1437,8 @@
         "label": "Fruity",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -1358,7 +1453,8 @@
         "label": "Maximalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "045",
@@ -1366,7 +1462,8 @@
         "label": "Fruity",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "045",
@@ -1374,7 +1471,8 @@
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
@@ -1389,7 +1487,8 @@
         "label": "Maximalist",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "046",
@@ -1397,7 +1496,8 @@
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       },
       {
         "parent": "046",
@@ -1405,7 +1505,8 @@
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
-        "price": 15.0
+        "price": 15.0,
+        "image": ""
       }
     ]
   },
