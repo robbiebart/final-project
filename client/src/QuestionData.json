@@ -2,26 +2,27 @@
   {
     "id": "001",
     "text": "Chocolate or vanilla?",
+    "copy": "First things first: chocolate or vanilla?",
     "name": "flavour_excluder",
     "options": [
       {
         "parent": "001",
         "value": "choc",
-        "label": "Choc",
+        "label": "Chocolate, 100%!",
         "next": "002",
         "db_return": "excluder_flavour_value"
       },
       {
         "parent": "001",
         "value": "vanilla",
-        "label": "Vanilla",
+        "label": "Vanilla! You can’t beat a classic.",
         "next": "007",
         "db_return": "excluder_flavour_value"
       },
       {
         "parent": "001",
         "value": "neither_flavour",
-        "label": "Neither",
+        "label": "Neither; my tastes are far too refined for such pedestrian options.",
         "next": "011",
         "db_return": "excluder_flavour_value"
       }
@@ -30,12 +31,13 @@
   {
     "id": "002",
     "text": "Red velvet, chocolate, or blackout?",
+    "copy": "Okay, but how much chocolate is too much chocolate?",
     "name": "flavour_selector",
     "options": [
       {
         "parent": "002",
-        "value": "Red Velvet",
-        "label": "Red velvet",
+        "value": "red_velvet",
+        "label": "Chocolate is best when complimented with other flavours… like white chocolate, for example (kidding) (mostly).",
         "next": "003",
         "db_return": "selector_flavour_value",
         "price": 15.0,
@@ -44,7 +46,7 @@
       {
         "parent": "002",
         "value": "chocolate",
-        "label": "Chocolate",
+        "label": "I mean, the limit is pretty high, but I’d stop somewhere short of pumping chocolate straight into my veins. ",
         "next": "004",
         "db_return": "selector_flavour_value",
         "price": 15.0,
@@ -52,8 +54,8 @@
       },
       {
         "parent": "002",
-        "value": "Blackout",
-        "label": "Blackout",
+        "value": "blackout",
+        "label": "I’m sorry--I don’t think I understand the question? Are you implying there’s such a thing as TOO MUCH chocolate??",
         "next": "006",
         "db_return": "selector_flavour_value",
         "price": 15.0,
@@ -64,11 +66,12 @@
   {
     "id": "003",
     "text": "Cream cheese or basic buttercream?",
+    "copy": "",
     "name": "icing_selector",
     "options": [
       {
         "parent": "003",
-        "value": "Cream Cheese",
+        "value": "cream_cheese",
         "label": "Cream Cheese",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -77,7 +80,7 @@
       },
       {
         "parent": "003",
-        "value": "basic buttercream",
+        "value": "basic_buttercream",
         "label": "Basic Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -89,11 +92,12 @@
   {
     "id": "004",
     "text": "Basic buttercream, swiss meringue, cream cheese or neither (chocolate or ganache)?",
+    "copy": "",
     "name": "icing_selector",
     "options": [
       {
         "parent": "004",
-        "value": "Basic Buttercream",
+        "value": "basic_buttercream",
         "label": "Basic Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -102,7 +106,7 @@
       },
       {
         "parent": "004",
-        "value": "Swiss Meringue",
+        "value": "swiss_meringue",
         "label": "Swiss Meringue",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -111,7 +115,7 @@
       },
       {
         "parent": "004",
-        "value": "Cream Cheese",
+        "value": "cream_cheese",
         "label": "Cream Cheese",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -130,11 +134,12 @@
   {
     "id": "005",
     "text": "Chocolate or Ganache?",
+    "copy": "",
     "name": "icing_selector",
     "options": [
       {
         "parent": "005",
-        "value": "Chocolate",
+        "value": "chocolate_buttercream",
         "label": "Chocolate",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -143,7 +148,7 @@
       },
       {
         "parent": "005",
-        "value": "Ganache",
+        "value": "ganache",
         "label": "Ganache",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -155,11 +160,12 @@
   {
     "id": "006",
     "text": "Whipped cream, berry, chocolate, or ganache?",
+    "copy": "",
     "name": "icing_selector",
     "options": [
       {
         "parent": "006",
-        "value": "Whipped Cream",
+        "value": "whipped_cream",
         "label": "Whipped Cream",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -168,7 +174,7 @@
       },
       {
         "parent": "006",
-        "value": "Berry Buttercream",
+        "value": "berry_buttercream",
         "label": "Berry Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -177,7 +183,7 @@
       },
       {
         "parent": "006",
-        "value": "Chocolate",
+        "value": "chocolate_buttercream",
         "label": "Chocolate",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -186,7 +192,7 @@
       },
       {
         "parent": "006",
-        "value": "Ganache",
+        "value": "ganache",
         "label": "Ganache",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -198,6 +204,7 @@
   {
     "id": "007",
     "text": "Yellow Sponge or Funfetti?",
+    "copy": "",
     "name": "flavour_selector",
     "options": [
       {
@@ -223,11 +230,12 @@
   {
     "id": "008",
     "text": "Basic buttercream, whipped cream, swiss meringue, or neither (chocolate or berry)?",
+    "copy": "",
     "name": "icing_selector",
     "options": [
       {
         "parent": "008",
-        "value": "Basic Buttercream",
+        "value": "basic_buttercream",
         "label": "Basic Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -236,7 +244,7 @@
       },
       {
         "parent": "008",
-        "value": "Whipped Cream",
+        "value": "whipped_cream",
         "label": "Whipped Cream",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -245,7 +253,7 @@
       },
       {
         "parent": "008",
-        "value": "Swiss Meringue",
+        "value": "swiss_meringue",
         "label": "Swiss Meringue",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -264,11 +272,12 @@
   {
     "id": "009",
     "text": "Chocolate or Berry??",
+    "copy": "",
     "name": "icing_selector",
     "options": [
       {
         "parent": "009",
-        "value": "Chocolate",
+        "value": "chocolate_buttercream",
         "label": "Chocolate",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -277,7 +286,7 @@
       },
       {
         "parent": "009",
-        "value": "Berry Buttercream",
+        "value": "berry_buttercream",
         "label": "Berry Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -289,6 +298,7 @@
   {
     "id": "010",
     "text": "Basic buttercream, chocolate buttercream, or berry buttercream?",
+    "copy": "",
     "name": "icing_selector",
     "options": [
       {
@@ -323,11 +333,12 @@
   {
     "id": "011",
     "text": "Carrot or Lemon?",
+    "copy": "",
     "name": "flavour_selector",
     "options": [
       {
         "parent": "011",
-        "value": "Carrot",
+        "value": "carrot",
         "label": "Carrot",
         "next": "012",
         "db_return": "selector_flavour_value",
@@ -336,7 +347,7 @@
       },
       {
         "parent": "011",
-        "value": "Lemon",
+        "value": "lemon",
         "label": "Lemon",
         "next": "013",
         "db_return": "selector_flavour_value",
@@ -348,11 +359,12 @@
   {
     "id": "012",
     "text": "Cream cheese or basic buttercream?",
+    "copy": "",
     "name": "icing_selector",
     "options": [
       {
         "parent": "012",
-        "value": "Cream Cheese",
+        "value": "cream_cheese",
         "label": "Cream Cheese",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -361,7 +373,7 @@
       },
       {
         "parent": "012",
-        "value": "Basic Buttercream",
+        "value": "basic_buttercream",
         "label": "Basic Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -373,11 +385,12 @@
   {
     "id": "013",
     "text": "Basic buttercream, swiss meringue, cream cheese, or berry?",
+    "copy": "",
     "name": "icing_selector",
     "options": [
       {
         "parent": "013",
-        "value": "Basic Buttercream",
+        "value": "basic_buttercream",
         "label": "Basic Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -386,7 +399,7 @@
       },
       {
         "parent": "013",
-        "value": "Swiss Meringue",
+        "value": "swiss_meringue",
         "label": "Swiss Meringue",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -395,7 +408,7 @@
       },
       {
         "parent": "013",
-        "value": "Cream Cheese",
+        "value": "cream_cheese",
         "label": "Cream Cheese",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -404,7 +417,7 @@
       },
       {
         "parent": "013",
-        "value": "Berry Buttercream",
+        "value": "berry_buttercream",
         "label": "Berry Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
@@ -416,6 +429,7 @@
   {
     "id": "014",
     "text": "Exclude fruity cake?",
+    "copy": "",
     "name": "style_excluder",
     "options": [
       {
@@ -437,6 +451,7 @@
   {
     "id": "015",
     "text": "Exclude which styles?",
+    "copy": "",
     "name": "style_excluder",
     "options": [
       {
@@ -465,6 +480,7 @@
   {
     "id": "016",
     "text": "Exclude which styles?",
+    "copy": "",
     "name": "style_excluder",
     "options": [
       {
@@ -500,11 +516,12 @@
   {
     "id": "017",
     "text": "Minimalist, classic, or abstract?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "017",
-        "value": "Minimalist",
+        "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -513,7 +530,7 @@
       },
       {
         "parent": "017",
-        "value": "Classic",
+        "value": "classic",
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -522,7 +539,7 @@
       },
       {
         "parent": "017",
-        "value": "Abstract",
+        "value": "abstract",
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -534,11 +551,12 @@
   {
     "id": "018",
     "text": "The works, classic, or abstract?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "018",
-        "value": "The works",
+        "value": "the_works",
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -547,7 +565,7 @@
       },
       {
         "parent": "018",
-        "value": "Classic",
+        "value": "classic",
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -556,7 +574,7 @@
       },
       {
         "parent": "018",
-        "value": "Abstract",
+        "value": "abstract",
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -568,11 +586,12 @@
   {
     "id": "019",
     "text": "The works, minimalist, or abstract?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "019",
-        "value": "The works",
+        "value": "the_works",
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -581,7 +600,7 @@
       },
       {
         "parent": "019",
-        "value": "Minimalist",
+        "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -590,7 +609,7 @@
       },
       {
         "parent": "019",
-        "value": "Abstract",
+        "value": "abstract",
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -602,25 +621,26 @@
   {
     "id": "020",
     "text": "The works, minimalist, or classic?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "020",
-        "value": "The works",
+        "value": "the_works",
         "label": "The works",
         "next": "submit",
         "db_return": "selectorlue"
       },
       {
         "parent": "020",
-        "value": "Minimalist",
+        "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selectorlue"
       },
       {
         "parent": "020",
-        "value": "Classic",
+        "value": "classic",
         "label": "Classic",
         "next": "submit",
         "db_return": "selectorlue"
@@ -630,6 +650,7 @@
   {
     "id": "021",
     "text": "Which to exclude?",
+    "copy": "",
     "name": "style_excluder",
     "options": [
       {
@@ -665,11 +686,12 @@
   {
     "id": "022",
     "text": "Maximalist, floral, or abstract?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "022",
-        "value": "Maximalist",
+        "value": "maximalist",
         "label": "Maximalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -678,7 +700,7 @@
       },
       {
         "parent": "022",
-        "value": "Floral",
+        "value": "floral",
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -687,7 +709,7 @@
       },
       {
         "parent": "022",
-        "value": "Abstract",
+        "value": "abstract",
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -699,11 +721,12 @@
   {
     "id": "023",
     "text": "The works, floral, or abstract?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "023",
-        "value": "The works",
+        "value": "the_works",
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -712,7 +735,7 @@
       },
       {
         "parent": "023",
-        "value": "Floral",
+        "value": "floral",
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -721,7 +744,7 @@
       },
       {
         "parent": "023",
-        "value": "Abstract",
+        "value": "abstract",
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -733,11 +756,12 @@
   {
     "id": "024",
     "text": "The works, maximalist, or abstract?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "024",
-        "value": "The works",
+        "value": "the_works",
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -746,7 +770,7 @@
       },
       {
         "parent": "024",
-        "value": "Maximalist",
+        "value": "maximalist",
         "label": "Maximalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -755,7 +779,7 @@
       },
       {
         "parent": "024",
-        "value": "Abstract",
+        "value": "abstract",
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -767,11 +791,12 @@
   {
     "id": "025",
     "text": "The works, maximalist, or floral?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "025",
-        "value": "The works",
+        "value": "the_works",
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -780,7 +805,7 @@
       },
       {
         "parent": "025",
-        "value": "Maximalist",
+        "value": "maximalist",
         "label": "Maximalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -789,7 +814,7 @@
       },
       {
         "parent": "025",
-        "value": "Floral",
+        "value": "floral",
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -801,6 +826,7 @@
   {
     "id": "026",
     "text": "Which to exclude?",
+    "copy": "",
     "name": "style_excluder",
     "options": [
       {
@@ -836,11 +862,12 @@
   {
     "id": "027",
     "text": "Classic, floral, or abstract?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "027",
-        "value": "Classic",
+        "value": "classic",
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -849,7 +876,7 @@
       },
       {
         "parent": "027",
-        "value": "Floral",
+        "value": "floral",
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -858,7 +885,7 @@
       },
       {
         "parent": "027",
-        "value": "Abstract",
+        "value": "abstract",
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -870,11 +897,12 @@
   {
     "id": "028",
     "text": "Minimalist, floral, or abstract?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "028",
-        "value": "Minimalist",
+        "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -883,7 +911,7 @@
       },
       {
         "parent": "028",
-        "value": "Floral",
+        "value": "floral",
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -892,7 +920,7 @@
       },
       {
         "parent": "028",
-        "value": "Abstract",
+        "value": "abstract",
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -904,11 +932,12 @@
   {
     "id": "029",
     "text": "Minimalist, classic, or abstract?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "029",
-        "value": "Minimalist",
+        "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -917,7 +946,7 @@
       },
       {
         "parent": "029",
-        "value": "Classic",
+        "value": "classic",
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -926,7 +955,7 @@
       },
       {
         "parent": "029",
-        "value": "Abstract",
+        "value": "abstract",
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -938,11 +967,12 @@
   {
     "id": "030",
     "text": "Minimalist, classic, or floral?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "030",
-        "value": "Minimalist",
+        "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -951,7 +981,7 @@
       },
       {
         "parent": "030",
-        "value": "Classic",
+        "value": "classic",
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -960,7 +990,7 @@
       },
       {
         "parent": "030",
-        "value": "Floral",
+        "value": "floral",
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -972,6 +1002,7 @@
   {
     "id": "031",
     "text": "Exclude which styles?",
+    "copy": "",
     "name": "style_excluder",
     "options": [
       {
@@ -1000,6 +1031,7 @@
   {
     "id": "032",
     "text": "Which to exclude?",
+    "copy": "",
     "name": "style_excluder",
     "options": [
       {
@@ -1035,11 +1067,12 @@
   {
     "id": "033",
     "text": "Minimalist, classic, or fruity?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "033",
-        "value": "Minimalist",
+        "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1048,7 +1081,7 @@
       },
       {
         "parent": "033",
-        "value": "Classic",
+        "value": "classic",
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1057,7 +1090,7 @@
       },
       {
         "parent": "033",
-        "value": "Fruity",
+        "value": "fruity",
         "label": "Fruity",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1069,11 +1102,12 @@
   {
     "id": "034",
     "text": "The works, classic, or fruity?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "034",
-        "value": "The works",
+        "value": "the_works",
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1082,7 +1116,7 @@
       },
       {
         "parent": "034",
-        "value": "Classic",
+        "value": "classic",
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1091,7 +1125,7 @@
       },
       {
         "parent": "034",
-        "value": "Fruity",
+        "value": "fruity",
         "label": "Fruity",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1103,11 +1137,12 @@
   {
     "id": "035",
     "text": "The works, minimalist, or fruity?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "035",
-        "value": "The works",
+        "value": "the_works",
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1116,7 +1151,7 @@
       },
       {
         "parent": "035",
-        "value": "Minimalist",
+        "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1125,7 +1160,7 @@
       },
       {
         "parent": "035",
-        "value": "Fruity",
+        "value": "fruity",
         "label": "Fruity",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1137,11 +1172,12 @@
   {
     "id": "036",
     "text": "The works, minimalist, or classic?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "036",
-        "value": "The works",
+        "value": "the_works",
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1150,7 +1186,7 @@
       },
       {
         "parent": "036",
-        "value": "Minimalist",
+        "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1159,7 +1195,7 @@
       },
       {
         "parent": "036",
-        "value": "Classic",
+        "value": "classic",
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1171,6 +1207,7 @@
   {
     "id": "037",
     "text": "Which to exclude?",
+    "copy": "",
     "name": "style_excluder",
     "options": [
       {
@@ -1206,11 +1243,12 @@
   {
     "id": "038",
     "text": "Classic, floral, or abstract?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "038",
-        "value": "Classic",
+        "value": "classic",
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1219,7 +1257,7 @@
       },
       {
         "parent": "038",
-        "value": "Floral",
+        "value": "floral",
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1228,7 +1266,7 @@
       },
       {
         "parent": "038",
-        "value": "Abstract",
+        "value": "abstract",
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1240,11 +1278,12 @@
   {
     "id": "039",
     "text": "Floral, abstract, or minimalist?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "039",
-        "value": "Floral",
+        "value": "floral",
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1253,7 +1292,7 @@
       },
       {
         "parent": "039",
-        "value": "Abstract",
+        "value": "abstract",
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1262,7 +1301,7 @@
       },
       {
         "parent": "039",
-        "value": "Minimalist",
+        "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1274,11 +1313,12 @@
   {
     "id": "040",
     "text": "Classic, abstract, or minimalist?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "040",
-        "value": "Classic",
+        "value": "classic",
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1287,7 +1327,7 @@
       },
       {
         "parent": "040",
-        "value": "Abstract",
+        "value": "abstract",
         "label": "Abstract",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1296,7 +1336,7 @@
       },
       {
         "parent": "040",
-        "value": "Minimalist",
+        "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1308,11 +1348,12 @@
   {
     "id": "041",
     "text": "Classic, floral, or minimalist?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "041",
-        "value": "Classic",
+        "value": "classic",
         "label": "Classic",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1321,7 +1362,7 @@
       },
       {
         "parent": "041",
-        "value": "Floral",
+        "value": "floral",
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1330,7 +1371,7 @@
       },
       {
         "parent": "041",
-        "value": "Minimalist",
+        "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1342,6 +1383,7 @@
   {
     "id": "042",
     "text": "Which to exclude?",
+    "copy": "",
     "name": "style_excluder",
     "options": [
       {
@@ -1377,11 +1419,12 @@
   {
     "id": "043",
     "text": "Maximalist, floral, or fruity?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "043",
-        "value": "Maximalist",
+        "value": "maximalist",
         "label": "Maximalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1390,7 +1433,7 @@
       },
       {
         "parent": "043",
-        "value": "Floral",
+        "value": "floral",
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1399,7 +1442,7 @@
       },
       {
         "parent": "043",
-        "value": "Fruity",
+        "value": "fruity",
         "label": "Fruity",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1411,11 +1454,12 @@
   {
     "id": "044",
     "text": "The works, floral, or fruity?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "044",
-        "value": "The works",
+        "value": "the_works",
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1424,7 +1468,7 @@
       },
       {
         "parent": "044",
-        "value": "Floral",
+        "value": "floral",
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1433,7 +1477,7 @@
       },
       {
         "parent": "044",
-        "value": "Fruity",
+        "value": "fruity",
         "label": "Fruity",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1445,11 +1489,12 @@
   {
     "id": "045",
     "text": "Maximalist, fruity, or the works?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "045",
-        "value": "Maximalist",
+        "value": "maximalist",
         "label": "Maximalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1458,7 +1503,7 @@
       },
       {
         "parent": "045",
-        "value": "Fruity",
+        "value": "fruity",
         "label": "Fruity",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1467,7 +1512,7 @@
       },
       {
         "parent": "045",
-        "value": "The works",
+        "value": "the_works",
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1479,11 +1524,12 @@
   {
     "id": "046",
     "text": "Maximalist, the works, or floral?",
+    "copy": "",
     "name": "style_selector",
     "options": [
       {
         "parent": "046",
-        "value": "Maximalist",
+        "value": "maximalist",
         "label": "Maximalist",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1492,7 +1538,7 @@
       },
       {
         "parent": "046",
-        "value": "The works",
+        "value": "the_works",
         "label": "The works",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1501,7 +1547,7 @@
       },
       {
         "parent": "046",
-        "value": "Floral",
+        "value": "floral",
         "label": "Floral",
         "next": "submit",
         "db_return": "selector_style_value",
@@ -1513,6 +1559,7 @@
   {
     "id": "COPY_ME",
     "text": "",
+    "copy": "",
     "name": "cake_style",
     "options": [
       {

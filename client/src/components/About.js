@@ -1,20 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 import Holly from "../assets/Holly.png";
+import { Icon } from "react-icons-kit";
+import { instagram } from "react-icons-kit/icomoon/instagram";
+import { facebook2 } from "react-icons-kit/icomoon/facebook2";
+import { twitter } from "react-icons-kit/icomoon/twitter";
 
 export default function About() {
   return (
     <Wrapper>
-      {/* <Grid> */}
       <BioColumn>
         <BioImage src={Holly} alt="baker" />
-        <p>
-          hi! i'm holly.
-          <br /> welcome to my shop! this is a diary about food, farm life, and
-          adventures. have a look around and enjoy!
-        </p>
+        <Links>
+          <>
+            <Icon icon={instagram} />
+            <p>instagram</p>
+          </>
+          <>
+            <Icon icon={facebook2} />
+            <p>facebook</p>
+          </>
+          <>
+            <Icon icon={twitter} />
+            <p>twitter</p>
+          </>
+        </Links>
       </BioColumn>
-      {/* </Grid> */}
     </Wrapper>
   );
 }
@@ -45,4 +56,26 @@ const BioColumn = styled.div`
   grid-row-start: second;
 
   border-right: solid lightgray 2px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Links = styled.div`
+  grid-column-start: first;
+  grid-column-end: column2-start;
+  color: #fbc9b5;
+  border-top: solid 2px lightgray;
+  margin-top: 20px;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const BioText = styled.div`
+  grid-column-start: column2-start;
+  grid-row-start: second;
 `;

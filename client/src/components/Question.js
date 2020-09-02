@@ -7,6 +7,13 @@ export default function Question({ setQuestion, questionId, handleAnswer }) {
   useEffect(() => {
     setActiveQuestion(questions.find((q) => q.id === questionId));
   }, [questionId]);
+  useEffect(() => {
+    let elmnt;
+    if (activeQuestion !== undefined) {
+      elmnt = document.getElementById(activeQuestion.name);
+      elmnt.scrollIntoView();
+    }
+  }, [activeQuestion]);
   return (
     <QuestionWrapper>
       {activeQuestion && (
@@ -36,6 +43,8 @@ const QuestionWrapper = styled.div`
   grid-column-start: main-start;
   grid-column-end: main-end;
   grid-row-start: auto;
+
+  margin-bottom: 200px;
 
   p {
     color: gray;

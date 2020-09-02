@@ -4,10 +4,14 @@ import styled from "styled-components";
 import carrotImage from "../images/flavours/AdobeStock_79226474.jpeg";
 import vanillaImage from "../images/flavours/AdobeStock_79834586.jpeg";
 import chocolateImage from "../images/flavours/AdobeStock_168584853.jpeg";
+import buttercreamImage from "../images/icing/AdobeStock_5435269.jpeg";
+import chocolateButtercreamImage from "../images/icing/AdobeStock_87717233.jpeg";
+import berryButtercreamImage from "../images/icing/AdobeStock_196415142.jpeg";
+import maximalistImage from "../images/styles/IMG_4479.jpg";
+import fruityImage from "../images/styles/IMG_4660.JPG";
+import classicImage from "../images/styles/classic.png";
 
 export default function Results({ answers }) {
-  const cake = {};
-
   const selections = answers.filter((answer) =>
     answer.db_return.includes("selector")
   );
@@ -19,43 +23,144 @@ export default function Results({ answers }) {
   // reduce the array into an object with three matching keys
 
   const photos = {
-    flavours: {
-      carrot: carrotImage,
-      vanilla: vanillaImage,
-      chocolate: chocolateImage,
-    },
+    carrot: carrotImage,
+    yellow_sponge: vanillaImage,
+    chocolate: chocolateImage,
+
+    basic_buttercream: buttercreamImage,
+    chocolate_buttercream: chocolateButtercreamImage,
+    berry_buttercream: berryButtercreamImage,
+
+    maximalist: maximalistImage,
+    fruity: fruityImage,
+    classic: classicImage,
   };
   return (
-    <div>
-      <p>
-        You got a {selections[0].label} cake, with {selections[1].label} icing
-        in the {selections[2].label} style! The cost is ${total}.
-      </p>
-      <Gallery>
-        {console.log("selections", selections)}
-        {console.log("photos", photos.flavours)}
-        <Image
-          src="../src/images/flavours/AdobeStock_79834586.jpeg"
-          alt="cake"
-        />
-      </Gallery>
-    </div>
+    <Wrapper>
+      <Title>
+        <h2>Your Results:</h2>
+      </Title>
+      <Flavour>
+        <Info>Flavour: {selections[0].value}</Info>
+        <Image src={photos[selections[0].value]} alt="cake" />
+      </Flavour>
+      <Icing>
+        <Info>Icing: {selections[1].value}</Info>
+        <Image src={photos[selections[1].value]} alt="icing" />
+      </Icing>
+      <Style>
+        <Info>Style: {selections[2].value}</Info>
+        <Image src={photos[selections[2].value]} alt="style" />
+      </Style>
+    </Wrapper>
   );
 }
 
-const Gallery = styled.div`
-  border: solid red 2px;
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   height: 100%;
   width: 100%;
+`;
+
+const Title = styled.div`
+  grid-row-start: top;
+  grid-row-end: first;
+`;
+
+const Info = styled.p`
+  margin: 1px;
+`;
+
+const Flavour = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 2px lightgray;
+  margin: 10px;
+
+  @media (min-width: 680px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+  }
+`;
+
+const Icing = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 2px lightgray;
+  margin: 10px;
+
+  @media (min-width: 680px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+  }
+`;
+
+const Style = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 2px lightgray;
+  margin: 10px;
+
+  @media (min-width: 680px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+  }
 `;
 
 const Image = styled.img`
-  height: 30%;
-  width: 30%;
+  width: 330px;
+  height: 300px;
+  margin: 10px;
+
+  /* @media (min-width: 680px) {
+    
+  } */
 `;
+
+// const FlavourImage = styled.img`
+//   width: 80%;
+//   height: 80%;
+
+//   @media (min-width: 600px){
+//     grid-column-start: middle;
+//     grid-column-end: end;
+//     grid-row-start: ;
+//   }
+// `;
+
+// const IcingImage = styled.img`
+//   width: 80%;
+//   height: 80%;
+
+//   @media (min-width: 600px){
+//     grid-column-start: middle;
+//     grid-column-end: end;
+//     grid-row-start: ;
+//   }
+// `;
+
+// const StyleImage = styled.img`
+//   width: 80%;
+//   height: 80%;
+
+//   @media (min-width: 600px){
+//     grid-column-start: middle;
+//     grid-column-end: end;
+//     grid-row-start: ;
+//   }
+// `;
 /*
 add field called isSelector, assign to answers if true
 then you'd return answer.isSelected in the filter
@@ -68,4 +173,16 @@ radiobutton styling
 hash out pricing, for a database interaction
 buy now button with the price
 hooking up the buy now with stripe
-*/
+
+ display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: [top] 10vh [first] 70vh [second] 70vh [third] 70vh [last];
+
+  height: 100%;
+  width: 100%;
+
+  background: #fbc9b5;
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-rows: [top] 10vh [first] 50vh [second] 50vh [third] 50vh [last]; */

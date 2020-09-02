@@ -14,8 +14,6 @@ export default function QuestionArea() {
     /*
     hook into handleanswer, in onSelect, then do scrolltintoview
     */
-    // const elmnt = document.getElementById("Answers");
-    // elmnt.scrollIntoView();
 
     updateAnswers([...answers, answer]);
     setCurrentQuestion(answer.next);
