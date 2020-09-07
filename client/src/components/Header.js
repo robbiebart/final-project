@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import NavBar from "./NavBar";
+import NavBar from "./Nav/NavBar";
 import Title from "../assets/title.PNG";
 
 export default function Header() {
@@ -18,11 +18,16 @@ export default function Header() {
 }
 
 const Banner = styled.div`
-  grid-column-start: first;
+  grid-column-start: column1-start;
   grid-column-end: end;
 
-  grid-row-start: row1-start;
-  grid-row-end: nav-start;
+  @media (min-width: 680px) {
+    grid-column-start: first;
+    grid-column-end: end;
+
+    grid-row-start: row1-start;
+    grid-row-end: nav-start;
+  }
 
   /* background: rgb(253, 245, 233); */
   background: #fbc9b5;
@@ -40,15 +45,22 @@ const Banner = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 25vh;
+  height: 75%;
 `;
 
 const Nav = styled.div`
-  grid-column-start: main-start;
-  grid-column-end: main-end;
+  grid-column-start: first;
+  grid-column-end: end;
 
   grid-row-start: nav-start;
-  grid-row-end: third-line;
+  border: solid blue 2px;
 
+  @media (min-width: 680px) {
+    grid-column-start: first;
+    grid-column-end: end;
+
+    grid-row-start: nav-start;
+    grid-row-end: third-line;
+  }
   /* overflow: hidden; */
 `;

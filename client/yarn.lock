@@ -6929,6 +6929,14 @@ mkdirp@^0.5.5:
   dependencies:
     minimist "^1.2.5"
 
+mobile-viewer-component@^0.1.12:
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/mobile-viewer-component/-/mobile-viewer-component-0.1.12.tgz#33262a3ced598ce8df4d5115345d994e56a7dc8f"
+  integrity sha512-GvgrMzkqmTfJRPhkL7pJkeEtb5UTttGntdieB8TTNLfbrGYB45/Jp860p66RkMBysdvlZFqvhZYZRtdDiLK7EQ==
+  dependencies:
+    react-scripts "3.4.3"
+    styled-components "^5.1.1"
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"

@@ -64,9 +64,14 @@ export default function QuestionArea() {
 const QuizTitle = styled.h1``;
 
 const QuestionAreaWrapper = styled.div`
-  grid-row-start: third-line;
-  grid-row-end: fourth-line;
-  grid-column-start: main-start;
+  grid-column-start: column1-start;
+  grid-column-end: main-end;
+
+  @media (min-width: 680px) {
+    grid-row-start: third-line;
+    grid-row-end: fourth-line;
+    grid-column-start: main-start;
+  }
 `;
 
 const SubmitButton = styled.button`

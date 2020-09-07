@@ -33,15 +33,23 @@ function App() {
 
 const Grid = styled.div`
   /* border: solid 2px red; */
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 
   display: grid;
-  grid-template-columns: [first] 5vw [main-start] auto [main-end] 5vw [end];
+  grid-template-columns: [column1-start] 100% [end];
   grid-template-rows:
-    [row1-start] 35vh [nav-start] 100px [third-line] calc(100% - 75px)
+    [row1-start] 30% [nav-start] auto [third-line] calc(100% - 75px)
     [fourth-line];
-  grid-auto-rows: minmax(300px, auto);
+
+  @media (min-width: 680px) {
+    display: grid;
+    grid-template-columns: [first] 5vw [main-start] auto [main-end] 5vw [end];
+    grid-template-rows:
+      [row1-start] 35% [nav-start] 100px [third-line] calc(100% - 75px)
+      [fourth-line];
+    grid-auto-rows: minmax(300px, auto);
+  }
 `;
 
 // const QuizTitle = styled.h1``;

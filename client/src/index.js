@@ -2,6 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
+import MobileWrapper from "mobile-viewer-component/dist";
+
+// ReactDOM.render(
+//   <MobileWrapper background="weave">
+//     <App />
+//   </MobileWrapper>,
+//   document.getElementById("root")
+// );
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
