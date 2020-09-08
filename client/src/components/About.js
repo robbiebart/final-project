@@ -31,51 +31,67 @@ export default function About() {
 }
 
 const Wrapper = styled.div`
-  grid-row-start: third-line;
-  grid-row-end: fourth-line;
-  grid-column-start: main-start;
+  @media (min-width: 680px) {
+    grid-row-start: third-line;
+    grid-row-end: fourth-line;
+    grid-column-start: main-start;
 
-  margin: 20px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
 
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 
-  display: grid;
+    display: grid;
 
-  grid-template-columns: [first] 1fr [column2-start] 1fr [column3-start] 1fr [end];
-  grid-template-rows: [top] 50px [second] auto;
+    grid-template-columns: [first] 1fr [column2-start] 1fr [column3-start] 1fr [end];
+    grid-template-rows: [top] 50px [second] auto;
+  }
 `;
 const BioImage = styled.img`
-  width: 80%;
+  width: 50%;
   border-radius: 50%;
+  @media (min-width: 680px) {
+    width: 80%;
+    border-radius: 50%;
+  }
 `;
 
 const BioColumn = styled.div`
-  grid-column-start: first;
-  grid-column-end: column2-start;
-  grid-row-start: second;
-
-  border-right: solid lightgray 2px;
-
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
+
+  @media (min-width: 680px) {
+    grid-column-start: first;
+    grid-column-end: column2-start;
+    grid-row-start: second;
+
+    border-right: solid lightgray 2px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Links = styled.div`
-  grid-column-start: first;
-  grid-column-end: column2-start;
-  color: #fbc9b5;
-  border-top: solid 2px lightgray;
-  margin-top: 20px;
-  width: 80%;
+  @media (min-width: 680px) {
+    grid-column-start: first;
+    grid-column-end: column2-start;
+    color: #fbc9b5;
+    border-top: solid 2px lightgray;
+    margin-top: 20px;
+    width: 80%;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const BioText = styled.div`
-  grid-column-start: column2-start;
-  grid-row-start: second;
+  @media (min-width: 680px) {
+    grid-column-start: column2-start;
+    grid-row-start: second;
+  }
 `;

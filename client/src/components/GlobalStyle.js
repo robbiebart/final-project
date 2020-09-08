@@ -97,6 +97,8 @@ h1 {
   label {
     font-family: 'Cabin', sans-serif;
   }
+  
+  background: #fbc9b5;
 `;
 
 export default GlobalStyle;

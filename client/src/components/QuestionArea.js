@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Answers from "./Answers";
 import Question from "./Question";
@@ -9,6 +9,7 @@ export default function QuestionArea() {
   const [answers, updateAnswers] = useState([]);
   const [error, setError] = useState(null);
   const [results, setResults] = useState(false);
+  const [color, setColor] = useState(false);
   const handleAnswer = (answer) => {
     // TODO: handle viewport scroll
     /*
@@ -17,6 +18,7 @@ export default function QuestionArea() {
 
     updateAnswers([...answers, answer]);
     setCurrentQuestion(answer.next);
+    setColor(!color);
   };
   const handleSubmit = async () => {
     // do database submission!
@@ -38,17 +40,31 @@ export default function QuestionArea() {
       console.error(error);
     }
   };
+  useEffect(() => {
+    let elmnt;
+    if (results) {
+      elmnt = document.getElementById("Results");
+      elmnt.scrollIntoView();
+    }
+  }, [results]);
+  {
+    console.log("results", results);
+  }
   return (
     <QuestionAreaWrapper>
-      <QuizTitle>Cake questionaire</QuizTitle>
-      <Answers answers={answers} />
+      <QuizTitle>
+        <TitleText>Cake Quiz!</TitleText>
+      </QuizTitle>
+      <Answers answers={answers} color={color} questionId={currentQuestion} />
       <Question
         setQuestion={setCurrentQuestion}
         questionId={currentQuestion}
         handleAnswer={handleAnswer}
       />
       {currentQuestion === "submit" ? (
-        <SubmitButton onClick={handleSubmit}>Submit</SubmitButton>
+        <SubmitButton id="SubmitButton" onClick={handleSubmit}>
+          Submit
+        </SubmitButton>
       ) : null}
       {error && (
         <>
@@ -61,23 +77,38 @@ export default function QuestionArea() {
   );
 }
 
-const QuizTitle = styled.h1``;
+const QuizTitle = styled.div`
+  border-bottom: solid lightgray 3px;
+  padding: 5px 5px 30px 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const TitleText = styled.h1``;
 
 const QuestionAreaWrapper = styled.div`
   grid-column-start: column1-start;
-  grid-column-end: main-end;
+  grid-column-end: end;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 
   @media (min-width: 680px) {
+    grid-column-start: main-start;
+    grid-column-end: main-end;
     grid-row-start: third-line;
     grid-row-end: fourth-line;
-    grid-column-start: main-start;
   }
 `;
 
 const SubmitButton = styled.button`
   padding: 0.5rem 1rem;
   margin: 1rem 0;
-  background-color: #ffc0cb70;
+  background-color: #fbc9b5;
   border-radius: 4px;
   border: solid 1px pink;
   box-shadow: 1px 1px gray;

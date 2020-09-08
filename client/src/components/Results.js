@@ -1,21 +1,53 @@
 import React from "react";
 import styled from "styled-components";
 // import flavours from "../images/flavours";
+
 import carrotImage from "../images/flavours/AdobeStock_79226474.jpeg";
 import vanillaImage from "../images/flavours/AdobeStock_79834586.jpeg";
 import chocolateImage from "../images/flavours/AdobeStock_168584853.jpeg";
+import blackoutImage from "../images/flavours/Blackout.jpg";
+import funfettiImage from "../images/flavours/funfetti.jpg";
+import lemonImage from "../images/flavours/lemon.jpg";
+import redvelvetImage from "../images/flavours/red_velvet.jpg";
+
 import buttercreamImage from "../images/icing/AdobeStock_5435269.jpeg";
 import chocolateButtercreamImage from "../images/icing/AdobeStock_87717233.jpeg";
 import berryButtercreamImage from "../images/icing/AdobeStock_196415142.jpeg";
+import creamcheeseImage from "../images/icing/creamcheese.png";
+import whippedcreamImage from "../images/icing/whippedcream.jpg";
+import swissmeringueImage from "../images/icing/swissmeringue.jpg";
+import ganacheImage from "../images/icing/ganache.jpg";
+
 import maximalistImage from "../images/styles/IMG_4479.jpg";
 import fruityImage from "../images/styles/IMG_4660.JPG";
 import classicImage from "../images/styles/classic.png";
+import floralImage from "../images/styles/floral.jpg";
+import abstractImage from "../images/styles/abstract.jpg";
+import minimalistImage from "../images/styles/minimalist.jpg";
+import theworksImage from "../images/styles/theworks.JPG";
 
 export default function Results({ answers }) {
   const selections = answers.filter((answer) =>
     answer.db_return.includes("selector")
   );
 
+  let flav = selections.filter((result) => {
+    return result.db_return.includes("selector_flav");
+  });
+
+  let icing = selections.filter((result) => {
+    return result.db_return.includes("selector_icing");
+  });
+
+  let style = selections.filter((result) => {
+    return result.db_return.includes("selector_style");
+  });
+
+  const cleaned = (arr) => {
+    return arr[0].value.replace("_", " ");
+  };
+  console.log("icing", icing);
+  console.log("cleaned", cleaned(icing));
   const prices = selections.map((selection) => selection.price);
   const total = prices.reduce((a, b) => {
     return a + b;
@@ -26,32 +58,51 @@ export default function Results({ answers }) {
     carrot: carrotImage,
     yellow_sponge: vanillaImage,
     chocolate: chocolateImage,
+    blackout: blackoutImage,
+    funfetti: funfettiImage,
+    lemon: lemonImage,
+    red_velvet: redvelvetImage,
 
     basic_buttercream: buttercreamImage,
     chocolate_buttercream: chocolateButtercreamImage,
     berry_buttercream: berryButtercreamImage,
+    cream_cheese: creamcheeseImage,
+    whipped_cream: whippedcreamImage,
+    swiss_meringue: swissmeringueImage,
+    ganache: ganacheImage,
 
     maximalist: maximalistImage,
     fruity: fruityImage,
     classic: classicImage,
+    floral: floralImage,
+    abstract: abstractImage,
+    minimalist: minimalistImage,
+    the_works: theworksImage,
   };
   return (
     <Wrapper>
-      <Title>
+      <Title id="Results">
         <h2>Your Results:</h2>
       </Title>
-      <Flavour>
-        <Info>Flavour: {selections[0].value}</Info>
+      <ResultComponent>
+        <p>
+          {selections[0].results_text}
+          {selections[1].results_text}
+          {selections[2].results_text}
+        </p>
+      </ResultComponent>
+      <ResultComponent>
+        <Info>Flavour: {cleaned(flav)}</Info>
         <Image src={photos[selections[0].value]} alt="cake" />
-      </Flavour>
-      <Icing>
-        <Info>Icing: {selections[1].value}</Info>
+      </ResultComponent>
+      <ResultComponent>
+        <Info>Icing: {cleaned(icing)}</Info>
         <Image src={photos[selections[1].value]} alt="icing" />
-      </Icing>
-      <Style>
-        <Info>Style: {selections[2].value}</Info>
+      </ResultComponent>
+      <ResultComponent>
+        <Info>Style: {cleaned(style)}</Info>
         <Image src={photos[selections[2].value]} alt="style" />
-      </Style>
+      </ResultComponent>
     </Wrapper>
   );
 }
@@ -74,12 +125,15 @@ const Info = styled.p`
   margin: 1px;
 `;
 
-const Flavour = styled.div`
+const ResultComponent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   border-bottom: solid 2px lightgray;
   margin: 10px;
+  padding: 10px;
+  background: lightgray;
+  border-radius: 4px;
 
   @media (min-width: 680px) {
     display: flex;
@@ -89,35 +143,35 @@ const Flavour = styled.div`
   }
 `;
 
-const Icing = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: solid 2px lightgray;
-  margin: 10px;
+// const Icing = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   border-bottom: solid 2px lightgray;
+//   margin: 10px;
 
-  @media (min-width: 680px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
-  }
-`;
+//   @media (min-width: 680px) {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     width: 80%;
+//   }
+// `;
 
-const Style = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: solid 2px lightgray;
-  margin: 10px;
+// const Style = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   border-bottom: solid 2px lightgray;
+//   margin: 10px;
 
-  @media (min-width: 680px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
-  }
-`;
+//   @media (min-width: 680px) {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     width: 80%;
+//   }
+// `;
 
 const Image = styled.img`
   width: 330px;

@@ -41,7 +41,8 @@
         "next": "003",
         "db_return": "selector_flavour_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re a wise, discerning person "
       },
       {
         "parent": "002",
@@ -50,7 +51,8 @@
         "next": "004",
         "db_return": "selector_flavour_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re a fun, passionate person "
       },
       {
         "parent": "002",
@@ -59,7 +61,8 @@
         "next": "006",
         "db_return": "selector_flavour_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re an intense, purposeful person "
       }
     ]
   },
@@ -76,7 +79,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a laid-back attitude and a creative mind. "
       },
       {
         "parent": "003",
@@ -85,7 +89,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with an appreciation for the simple things in life. "
       }
     ]
   },
@@ -102,7 +107,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with an appreciation for the simple things in life. "
       },
       {
         "parent": "004",
@@ -111,7 +117,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a love of the finer things in life. "
       },
       {
         "parent": "004",
@@ -120,7 +127,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a laid-back attitude and a creative mind. "
       },
       {
         "parent": "004",
@@ -140,11 +148,12 @@
       {
         "parent": "005",
         "value": "chocolate_buttercream",
-        "label": "Chocolate",
+        "label": "Chocolate Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a big personality. "
       },
       {
         "parent": "005",
@@ -153,7 +162,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": ""
       }
     ]
   },
@@ -170,7 +180,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with an utterly practical approach to life."
       },
       {
         "parent": "006",
@@ -179,16 +190,18 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a youthful spirit. "
       },
       {
         "parent": "006",
         "value": "chocolate_buttercream",
-        "label": "Chocolate",
+        "label": "Chocolate Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a big personality. "
       },
       {
         "parent": "006",
@@ -197,7 +210,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": ""
       }
     ]
   },
@@ -214,7 +228,8 @@
         "next": "008",
         "db_return": "selector_flavour_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re a prudent, direct person "
       },
       {
         "parent": "007",
@@ -223,7 +238,8 @@
         "next": "010",
         "db_return": "selector_flavour_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re a playful, unpredictable person "
       }
     ]
   },
@@ -240,7 +256,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with an appreciation for the simple things in life. "
       },
       {
         "parent": "008",
@@ -249,7 +266,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with an utterly practical approach to life. "
       },
       {
         "parent": "008",
@@ -258,7 +276,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a love of the finer things in life. "
       },
       {
         "parent": "008",
@@ -278,11 +297,12 @@
       {
         "parent": "009",
         "value": "chocolate_buttercream",
-        "label": "Chocolate",
+        "label": "Chocolate Buttercream",
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a big personality. "
       },
       {
         "parent": "009",
@@ -291,7 +311,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a youthful spirit. "
       }
     ]
   },
@@ -308,7 +329,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with an appreciation for the simple things in life. "
       },
       {
         "parent": "010",
@@ -317,7 +339,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a big personality. "
       },
       {
         "parent": "010",
@@ -326,7 +349,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a youthful spirit. "
       }
     ]
   },
@@ -343,7 +367,8 @@
         "next": "012",
         "db_return": "selector_flavour_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re a sophisticated, mature person "
       },
       {
         "parent": "011",
@@ -352,7 +377,8 @@
         "next": "013",
         "db_return": "selector_flavour_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re a cultured, enthusiastic person "
       }
     ]
   },
@@ -369,7 +395,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a laid-back attitude and a creative mind. "
       },
       {
         "parent": "012",
@@ -378,7 +405,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with an appreciation for the simple things in life. "
       }
     ]
   },
@@ -395,7 +423,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with an appreciation for the simple things in life. "
       },
       {
         "parent": "013",
@@ -404,7 +433,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a love of the finer things in life. "
       },
       {
         "parent": "013",
@@ -413,7 +443,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a laid-back attitude and a creative mind. "
       },
       {
         "parent": "013",
@@ -422,7 +453,8 @@
         "next": "014",
         "db_return": "selector_icing_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "with a youthful spirit. "
       }
     ]
   },
@@ -526,7 +558,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Your tastes are refined and your interests highbrow, to the point that other people might consider you a bit intimidating, but you never let that stop you from being yourself. You see the beauty in restraint and practicality, and you deserve a cake that you can proudly display as a centrepiece at your (undoubtedly classy) bash."
       },
       {
         "parent": "017",
@@ -535,7 +568,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You may be level-headed and uncomplicated, but deep down you’ve never really let go of your inner child, and you’re an easy, positive person to be around because of it. Your carefree nature makes most people instantly want to be your new BFF. You’ll doubtless be spending your birthday in an intimate gathering with your favourite people, and what better for the occasion than a cake that’s as playful and unaffected as you are?"
       },
       {
         "parent": "017",
@@ -544,7 +578,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You march to the beat of your own drum and would hate, above all else, to be labelled “normal”. You love trying new things and typically have a countless number of passion projects on the go. Your friends would struggle to describe your personality with just a few words—there’s just too much going on there! The only cake for you is one that’s as one-of-a-kind as you are."
       }
     ]
   },
@@ -561,7 +596,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’ve never understood the adage that says “moderation is best in all things”; if something makes you happy, you want as much of it as you can get! You’d rather life be complicated than boring, which isn’t to say you’re a raging party animal; in fact, your ideal night could best be described as “cozy”. You need a cake that’s as warm, inviting and full of happiness as you are!"
       },
       {
         "parent": "018",
@@ -570,7 +606,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You may be level-headed and uncomplicated, but deep down you’ve never really let go of your inner child, and you’re an easy, positive person to be around because of it. Your carefree nature makes most people instantly want to be your new BFF. You’ll doubtless be spending your birthday in an intimate gathering with your favourite people, and what better for the occasion than a cake that’s as playful and unaffected as you are?"
       },
       {
         "parent": "018",
@@ -579,7 +616,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You march to the beat of your own drum and would hate, above all else, to be labelled “normal”. You love trying new things and typically have a countless number of passion projects on the go. Your friends would struggle to describe your personality with just a few words—there’s just too much going on there! The only cake for you is one that’s as one-of-a-kind as you are."
       }
     ]
   },
@@ -596,7 +634,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’ve never understood the adage that says “moderation is best in all things”; if something makes you happy, you want as much of it as you can get! You’d rather life be complicated than boring, which isn’t to say you’re a raging party animal; in fact, your ideal night could best be described as “cozy”. You need a cake that’s as warm, inviting and full of happiness as you are!"
       },
       {
         "parent": "019",
@@ -605,7 +644,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Your tastes are refined and your interests highbrow, to the point that other people might consider you a bit intimidating, but you never let that stop you from being yourself. You see the beauty in restraint and practicality, and you deserve a cake that you can proudly display as a centrepiece at your (undoubtedly classy) bash."
       },
       {
         "parent": "019",
@@ -614,7 +654,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You march to the beat of your own drum and would hate, above all else, to be labelled “normal”. You love trying new things and typically have a countless number of passion projects on the go. Your friends would struggle to describe your personality with just a few words—there’s just too much going on there! The only cake for you is one that’s as one-of-a-kind as you are."
       }
     ]
   },
@@ -629,21 +670,30 @@
         "value": "the_works",
         "label": "The works",
         "next": "submit",
-        "db_return": "selectorlue"
+        "db_return": "selector_style_value",
+        "price": 15.0,
+        "image": "",
+        "results_text": "You’ve never understood the adage that says “moderation is best in all things”; if something makes you happy, you want as much of it as you can get! You’d rather life be complicated than boring, which isn’t to say you’re a raging party animal; in fact, your ideal night could best be described as “cozy”. You need a cake that’s as warm, inviting and full of happiness as you are!"
       },
       {
         "parent": "020",
         "value": "minimalist",
         "label": "Minimalist",
         "next": "submit",
-        "db_return": "selectorlue"
+        "db_return": "selector_style_value",
+        "price": 15.0,
+        "image": "",
+        "results_text": "Your tastes are refined and your interests highbrow, to the point that other people might consider you a bit intimidating, but you never let that stop you from being yourself. You see the beauty in restraint and practicality, and you deserve a cake that you can proudly display as a centrepiece at your (undoubtedly classy) bash."
       },
       {
         "parent": "020",
         "value": "classic",
         "label": "Classic",
         "next": "submit",
-        "db_return": "selectorlue"
+        "db_return": "selector_style_value",
+        "price": 15.0,
+        "image": "",
+        "results_text": "You may be level-headed and uncomplicated, but deep down you’ve never really let go of your inner child, and you’re an easy, positive person to be around because of it. Your carefree nature makes most people instantly want to be your new BFF. You’ll doubtless be spending your birthday in an intimate gathering with your favourite people, and what better for the occasion than a cake that’s as playful and unaffected as you are?"
       }
     ]
   },
@@ -696,7 +746,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You tend to have a lot going on at all times, but even when it seems like you’ve bitten off more than you can chew, you somehow always make it work; you love having fun way too much to let the little things get you down. You’re in the unique position of being both the life of the party and the parent of your friend group, and you need a cake that’s as wild as you are, and brimming with as much positivity!"
       },
       {
         "parent": "022",
@@ -705,7 +756,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Underneath a delicate, gentle facçade lies a bold spirit. A true romantic at heart, you don’t only see yourself as the protagonist of your own life, but as the protagonist of an epic modern-day fairytale. You deserve a cake fit for royalty, and which is, like you, equal parts sweet and fierce."
       },
       {
         "parent": "022",
@@ -714,7 +766,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You march to the beat of your own drum and would hate, above all else, to be labelled “normal”. You love trying new things and typically have a countless number of passion projects on the go. Your friends would struggle to describe your personality with just a few words—there’s just too much going on there! The only cake for you is one that’s as one-of-a-kind as you are."
       }
     ]
   },
@@ -731,7 +784,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’ve never understood the adage that says “moderation is best in all things”; if something makes you happy, you want as much of it as you can get! You’d rather life be complicated than boring, which isn’t to say you’re a raging party animal; in fact, your ideal night could best be described as “cozy”. You need a cake that’s as warm, inviting and full of happiness as you are!"
       },
       {
         "parent": "023",
@@ -740,7 +794,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Underneath a delicate, gentle facçade lies a bold spirit. A true romantic at heart, you don’t only see yourself as the protagonist of your own life, but as the protagonist of an epic modern-day fairytale. You deserve a cake fit for royalty, and which is, like you, equal parts sweet and fierce."
       },
       {
         "parent": "023",
@@ -749,7 +804,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You march to the beat of your own drum and would hate, above all else, to be labelled “normal”. You love trying new things and typically have a countless number of passion projects on the go. Your friends would struggle to describe your personality with just a few words—there’s just too much going on there! The only cake for you is one that’s as one-of-a-kind as you are."
       }
     ]
   },
@@ -766,7 +822,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’ve never understood the adage that says “moderation is best in all things”; if something makes you happy, you want as much of it as you can get! You’d rather life be complicated than boring, which isn’t to say you’re a raging party animal; in fact, your ideal night could best be described as “cozy”. You need a cake that’s as warm, inviting and full of happiness as you are!"
       },
       {
         "parent": "024",
@@ -775,7 +832,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You tend to have a lot going on at all times, but even when it seems like you’ve bitten off more than you can chew, you somehow always make it work; you love having fun way too much to let the little things get you down. You’re in the unique position of being both the life of the party and the parent of your friend group, and you need a cake that’s as wild as you are, and brimming with as much positivity!"
       },
       {
         "parent": "024",
@@ -784,7 +842,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You march to the beat of your own drum and would hate, above all else, to be labelled “normal”. You love trying new things and typically have a countless number of passion projects on the go. Your friends would struggle to describe your personality with just a few words—there’s just too much going on there! The only cake for you is one that’s as one-of-a-kind as you are."
       }
     ]
   },
@@ -801,7 +860,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’ve never understood the adage that says “moderation is best in all things”; if something makes you happy, you want as much of it as you can get! You’d rather life be complicated than boring, which isn’t to say you’re a raging party animal; in fact, your ideal night could best be described as “cozy”. You need a cake that’s as warm, inviting and full of happiness as you are!"
       },
       {
         "parent": "025",
@@ -810,7 +870,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You tend to have a lot going on at all times, but even when it seems like you’ve bitten off more than you can chew, you somehow always make it work; you love having fun way too much to let the little things get you down. You’re in the unique position of being both the life of the party and the parent of your friend group, and you need a cake that’s as wild as you are, and brimming with as much positivity!"
       },
       {
         "parent": "025",
@@ -819,7 +880,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Underneath a delicate, gentle facçade lies a bold spirit. A true romantic at heart, you don’t only see yourself as the protagonist of your own life, but as the protagonist of an epic modern-day fairytale. You deserve a cake fit for royalty, and which is, like you, equal parts sweet and fierce."
       }
     ]
   },
@@ -872,7 +934,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You may be level-headed and uncomplicated, but deep down you’ve never really let go of your inner child, and you’re an easy, positive person to be around because of it. Your carefree nature makes most people instantly want to be your new BFF. You’ll doubtless be spending your birthday in an intimate gathering with your favourite people, and what better for the occasion than a cake that’s as playful and unaffected as you are?"
       },
       {
         "parent": "027",
@@ -881,7 +944,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Underneath a delicate, gentle facçade lies a bold spirit. A true romantic at heart, you don’t only see yourself as the protagonist of your own life, but as the protagonist of an epic modern-day fairytale. You deserve a cake fit for royalty, and which is, like you, equal parts sweet and fierce."
       },
       {
         "parent": "027",
@@ -890,7 +954,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You march to the beat of your own drum and would hate, above all else, to be labelled “normal”. You love trying new things and typically have a countless number of passion projects on the go. Your friends would struggle to describe your personality with just a few words—there’s just too much going on there! The only cake for you is one that’s as one-of-a-kind as you are."
       }
     ]
   },
@@ -907,7 +972,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Your tastes are refined and your interests highbrow, to the point that other people might consider you a bit intimidating, but you never let that stop you from being yourself. You see the beauty in restraint and practicality, and you deserve a cake that you can proudly display as a centrepiece at your (undoubtedly classy) bash."
       },
       {
         "parent": "028",
@@ -916,7 +982,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Underneath a delicate, gentle facçade lies a bold spirit. A true romantic at heart, you don’t only see yourself as the protagonist of your own life, but as the protagonist of an epic modern-day fairytale. You deserve a cake fit for royalty, and which is, like you, equal parts sweet and fierce."
       },
       {
         "parent": "028",
@@ -925,7 +992,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You march to the beat of your own drum and would hate, above all else, to be labelled “normal”. You love trying new things and typically have a countless number of passion projects on the go. Your friends would struggle to describe your personality with just a few words—there’s just too much going on there! The only cake for you is one that’s as one-of-a-kind as you are."
       }
     ]
   },
@@ -942,7 +1010,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Your tastes are refined and your interests highbrow, to the point that other people might consider you a bit intimidating, but you never let that stop you from being yourself. You see the beauty in restraint and practicality, and you deserve a cake that you can proudly display as a centrepiece at your (undoubtedly classy) bash."
       },
       {
         "parent": "029",
@@ -951,7 +1020,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You may be level-headed and uncomplicated, but deep down you’ve never really let go of your inner child, and you’re an easy, positive person to be around because of it. Your carefree nature makes most people instantly want to be your new BFF. You’ll doubtless be spending your birthday in an intimate gathering with your favourite people, and what better for the occasion than a cake that’s as playful and unaffected as you are?"
       },
       {
         "parent": "029",
@@ -960,7 +1030,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You march to the beat of your own drum and would hate, above all else, to be labelled “normal”. You love trying new things and typically have a countless number of passion projects on the go. Your friends would struggle to describe your personality with just a few words—there’s just too much going on there! The only cake for you is one that’s as one-of-a-kind as you are."
       }
     ]
   },
@@ -977,7 +1048,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Your tastes are refined and your interests highbrow, to the point that other people might consider you a bit intimidating, but you never let that stop you from being yourself. You see the beauty in restraint and practicality, and you deserve a cake that you can proudly display as a centrepiece at your (undoubtedly classy) bash."
       },
       {
         "parent": "030",
@@ -986,7 +1058,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You may be level-headed and uncomplicated, but deep down you’ve never really let go of your inner child, and you’re an easy, positive person to be around because of it. Your carefree nature makes most people instantly want to be your new BFF. You’ll doubtless be spending your birthday in an intimate gathering with your favourite people, and what better for the occasion than a cake that’s as playful and unaffected as you are?"
       },
       {
         "parent": "030",
@@ -995,7 +1068,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Underneath a delicate, gentle facçade lies a bold spirit. A true romantic at heart, you don’t only see yourself as the protagonist of your own life, but as the protagonist of an epic modern-day fairytale. You deserve a cake fit for royalty, and which is, like you, equal parts sweet and fierce."
       }
     ]
   },
@@ -1077,7 +1151,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Your tastes are refined and your interests highbrow, to the point that other people might consider you a bit intimidating, but you never let that stop you from being yourself. You see the beauty in restraint and practicality, and you deserve a cake that you can proudly display as a centrepiece at your (undoubtedly classy) bash."
       },
       {
         "parent": "033",
@@ -1086,7 +1161,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You may be level-headed and uncomplicated, but deep down you’ve never really let go of your inner child, and you’re an easy, positive person to be around because of it. Your carefree nature makes most people instantly want to be your new BFF. You’ll doubtless be spending your birthday in an intimate gathering with your favourite people, and what better for the occasion than a cake that’s as playful and unaffected as you are?"
       },
       {
         "parent": "033",
@@ -1095,7 +1171,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re a free spirit who believes that life is for living, and you’re eager to live it to the fullest. You thrive on authenticity and caring for others, and you prefer things that are imperfectly real to things that are shiny and beautiful but hollow. You need a cake that’s all about substance over style, and which is as free of pretense as you are."
       }
     ]
   },
@@ -1112,7 +1189,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’ve never understood the adage that says “moderation is best in all things”; if something makes you happy, you want as much of it as you can get! You’d rather life be complicated than boring, which isn’t to say you’re a raging party animal; in fact, your ideal night could best be described as “cozy”. You need a cake that’s as warm, inviting and full of happiness as you are!"
       },
       {
         "parent": "034",
@@ -1121,7 +1199,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You may be level-headed and uncomplicated, but deep down you’ve never really let go of your inner child, and you’re an easy, positive person to be around because of it. Your carefree nature makes most people instantly want to be your new BFF. You’ll doubtless be spending your birthday in an intimate gathering with your favourite people, and what better for the occasion than a cake that’s as playful and unaffected as you are?"
       },
       {
         "parent": "034",
@@ -1130,7 +1209,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re a free spirit who believes that life is for living, and you’re eager to live it to the fullest. You thrive on authenticity and caring for others, and you prefer things that are imperfectly real to things that are shiny and beautiful but hollow. You need a cake that’s all about substance over style, and which is as free of pretense as you are."
       }
     ]
   },
@@ -1147,7 +1227,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’ve never understood the adage that says “moderation is best in all things”; if something makes you happy, you want as much of it as you can get! You’d rather life be complicated than boring, which isn’t to say you’re a raging party animal; in fact, your ideal night could best be described as “cozy”. You need a cake that’s as warm, inviting and full of happiness as you are!"
       },
       {
         "parent": "035",
@@ -1156,7 +1237,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Your tastes are refined and your interests highbrow, to the point that other people might consider you a bit intimidating, but you never let that stop you from being yourself. You see the beauty in restraint and practicality, and you deserve a cake that you can proudly display as a centrepiece at your (undoubtedly classy) bash."
       },
       {
         "parent": "035",
@@ -1165,7 +1247,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re a free spirit who believes that life is for living, and you’re eager to live it to the fullest. You thrive on authenticity and caring for others, and you prefer things that are imperfectly real to things that are shiny and beautiful but hollow. You need a cake that’s all about substance over style, and which is as free of pretense as you are."
       }
     ]
   },
@@ -1182,7 +1265,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’ve never understood the adage that says “moderation is best in all things”; if something makes you happy, you want as much of it as you can get! You’d rather life be complicated than boring, which isn’t to say you’re a raging party animal; in fact, your ideal night could best be described as “cozy”. You need a cake that’s as warm, inviting and full of happiness as you are!"
       },
       {
         "parent": "036",
@@ -1191,7 +1275,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Your tastes are refined and your interests highbrow, to the point that other people might consider you a bit intimidating, but you never let that stop you from being yourself. You see the beauty in restraint and practicality, and you deserve a cake that you can proudly display as a centrepiece at your (undoubtedly classy) bash."
       },
       {
         "parent": "036",
@@ -1200,7 +1285,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You may be level-headed and uncomplicated, but deep down you’ve never really let go of your inner child, and you’re an easy, positive person to be around because of it. Your carefree nature makes most people instantly want to be your new BFF. You’ll doubtless be spending your birthday in an intimate gathering with your favourite people, and what better for the occasion than a cake that’s as playful and unaffected as you are?"
       }
     ]
   },
@@ -1253,7 +1339,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You may be level-headed and uncomplicated, but deep down you’ve never really let go of your inner child, and you’re an easy, positive person to be around because of it. Your carefree nature makes most people instantly want to be your new BFF. You’ll doubtless be spending your birthday in an intimate gathering with your favourite people, and what better for the occasion than a cake that’s as playful and unaffected as you are?"
       },
       {
         "parent": "038",
@@ -1262,7 +1349,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Underneath a delicate, gentle facçade lies a bold spirit. A true romantic at heart, you don’t only see yourself as the protagonist of your own life, but as the protagonist of an epic modern-day fairytale. You deserve a cake fit for royalty, and which is, like you, equal parts sweet and fierce."
       },
       {
         "parent": "038",
@@ -1271,7 +1359,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You march to the beat of your own drum and would hate, above all else, to be labelled “normal”. You love trying new things and typically have a countless number of passion projects on the go. Your friends would struggle to describe your personality with just a few words—there’s just too much going on there! The only cake for you is one that’s as one-of-a-kind as you are."
       }
     ]
   },
@@ -1288,7 +1377,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Underneath a delicate, gentle facçade lies a bold spirit. A true romantic at heart, you don’t only see yourself as the protagonist of your own life, but as the protagonist of an epic modern-day fairytale. You deserve a cake fit for royalty, and which is, like you, equal parts sweet and fierce."
       },
       {
         "parent": "039",
@@ -1297,7 +1387,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You march to the beat of your own drum and would hate, above all else, to be labelled “normal”. You love trying new things and typically have a countless number of passion projects on the go. Your friends would struggle to describe your personality with just a few words—there’s just too much going on there! The only cake for you is one that’s as one-of-a-kind as you are."
       },
       {
         "parent": "039",
@@ -1306,7 +1397,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Your tastes are refined and your interests highbrow, to the point that other people might consider you a bit intimidating, but you never let that stop you from being yourself. You see the beauty in restraint and practicality, and you deserve a cake that you can proudly display as a centrepiece at your (undoubtedly classy) bash."
       }
     ]
   },
@@ -1323,7 +1415,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You may be level-headed and uncomplicated, but deep down you’ve never really let go of your inner child, and you’re an easy, positive person to be around because of it. Your carefree nature makes most people instantly want to be your new BFF. You’ll doubtless be spending your birthday in an intimate gathering with your favourite people, and what better for the occasion than a cake that’s as playful and unaffected as you are?"
       },
       {
         "parent": "040",
@@ -1332,7 +1425,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You march to the beat of your own drum and would hate, above all else, to be labelled “normal”. You love trying new things and typically have a countless number of passion projects on the go. Your friends would struggle to describe your personality with just a few words—there’s just too much going on there! The only cake for you is one that’s as one-of-a-kind as you are."
       },
       {
         "parent": "040",
@@ -1341,7 +1435,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Your tastes are refined and your interests highbrow, to the point that other people might consider you a bit intimidating, but you never let that stop you from being yourself. You see the beauty in restraint and practicality, and you deserve a cake that you can proudly display as a centrepiece at your (undoubtedly classy) bash."
       }
     ]
   },
@@ -1358,7 +1453,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You may be level-headed and uncomplicated, but deep down you’ve never really let go of your inner child, and you’re an easy, positive person to be around because of it. Your carefree nature makes most people instantly want to be your new BFF. You’ll doubtless be spending your birthday in an intimate gathering with your favourite people, and what better for the occasion than a cake that’s as playful and unaffected as you are?"
       },
       {
         "parent": "041",
@@ -1367,7 +1463,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Underneath a delicate, gentle facçade lies a bold spirit. A true romantic at heart, you don’t only see yourself as the protagonist of your own life, but as the protagonist of an epic modern-day fairytale. You deserve a cake fit for royalty, and which is, like you, equal parts sweet and fierce."
       },
       {
         "parent": "041",
@@ -1376,7 +1473,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Your tastes are refined and your interests highbrow, to the point that other people might consider you a bit intimidating, but you never let that stop you from being yourself. You see the beauty in restraint and practicality, and you deserve a cake that you can proudly display as a centrepiece at your (undoubtedly classy) bash."
       }
     ]
   },
@@ -1429,7 +1527,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You tend to have a lot going on at all times, but even when it seems like you’ve bitten off more than you can chew, you somehow always make it work; you love having fun way too much to let the little things get you down. You’re in the unique position of being both the life of the party and the parent of your friend group, and you need a cake that’s as wild as you are, and brimming with as much positivity!"
       },
       {
         "parent": "043",
@@ -1438,7 +1537,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Underneath a delicate, gentle facçade lies a bold spirit. A true romantic at heart, you don’t only see yourself as the protagonist of your own life, but as the protagonist of an epic modern-day fairytale. You deserve a cake fit for royalty, and which is, like you, equal parts sweet and fierce."
       },
       {
         "parent": "043",
@@ -1447,7 +1547,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re a free spirit who believes that life is for living, and you’re eager to live it to the fullest. You thrive on authenticity and caring for others, and you prefer things that are imperfectly real to things that are shiny and beautiful but hollow. You need a cake that’s all about substance over style, and which is as free of pretense as you are."
       }
     ]
   },
@@ -1464,7 +1565,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’ve never understood the adage that says “moderation is best in all things”; if something makes you happy, you want as much of it as you can get! You’d rather life be complicated than boring, which isn’t to say you’re a raging party animal; in fact, your ideal night could best be described as “cozy”. You need a cake that’s as warm, inviting and full of happiness as you are!"
       },
       {
         "parent": "044",
@@ -1473,7 +1575,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Underneath a delicate, gentle facçade lies a bold spirit. A true romantic at heart, you don’t only see yourself as the protagonist of your own life, but as the protagonist of an epic modern-day fairytale. You deserve a cake fit for royalty, and which is, like you, equal parts sweet and fierce."
       },
       {
         "parent": "044",
@@ -1482,7 +1585,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re a free spirit who believes that life is for living, and you’re eager to live it to the fullest. You thrive on authenticity and caring for others, and you prefer things that are imperfectly real to things that are shiny and beautiful but hollow. You need a cake that’s all about substance over style, and which is as free of pretense as you are."
       }
     ]
   },
@@ -1499,7 +1603,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You tend to have a lot going on at all times, but even when it seems like you’ve bitten off more than you can chew, you somehow always make it work; you love having fun way too much to let the little things get you down. You’re in the unique position of being both the life of the party and the parent of your friend group, and you need a cake that’s as wild as you are, and brimming with as much positivity!"
       },
       {
         "parent": "045",
@@ -1508,7 +1613,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’re a free spirit who believes that life is for living, and you’re eager to live it to the fullest. You thrive on authenticity and caring for others, and you prefer things that are imperfectly real to things that are shiny and beautiful but hollow. You need a cake that’s all about substance over style, and which is as free of pretense as you are."
       },
       {
         "parent": "045",
@@ -1517,7 +1623,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’ve never understood the adage that says “moderation is best in all things”; if something makes you happy, you want as much of it as you can get! You’d rather life be complicated than boring, which isn’t to say you’re a raging party animal; in fact, your ideal night could best be described as “cozy”. You need a cake that’s as warm, inviting and full of happiness as you are!"
       }
     ]
   },
@@ -1534,7 +1641,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You tend to have a lot going on at all times, but even when it seems like you’ve bitten off more than you can chew, you somehow always make it work; you love having fun way too much to let the little things get you down. You’re in the unique position of being both the life of the party and the parent of your friend group, and you need a cake that’s as wild as you are, and brimming with as much positivity!"
       },
       {
         "parent": "046",
@@ -1543,7 +1651,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "You’ve never understood the adage that says “moderation is best in all things”; if something makes you happy, you want as much of it as you can get! You’d rather life be complicated than boring, which isn’t to say you’re a raging party animal; in fact, your ideal night could best be described as “cozy”. You need a cake that’s as warm, inviting and full of happiness as you are!"
       },
       {
         "parent": "046",
@@ -1552,7 +1661,8 @@
         "next": "submit",
         "db_return": "selector_style_value",
         "price": 15.0,
-        "image": ""
+        "image": "",
+        "results_text": "Underneath a delicate, gentle facçade lies a bold spirit. A true romantic at heart, you don’t only see yourself as the protagonist of your own life, but as the protagonist of an epic modern-day fairytale. You deserve a cake fit for royalty, and which is, like you, equal parts sweet and fierce."
       }
     ]
   },

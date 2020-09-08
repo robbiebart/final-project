@@ -39,12 +39,12 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: [column1-start] 100% [end];
   grid-template-rows:
-    [row1-start] 30% [nav-start] auto [third-line] calc(100% - 75px)
+    [row1-start] auto [nav-end] auto [third-line] calc(100% - 75px)
     [fourth-line];
 
   @media (min-width: 680px) {
     display: grid;
-    grid-template-columns: [first] 5vw [main-start] auto [main-end] 5vw [end];
+    grid-template-columns: [first] 5% [main-start] auto [main-end] 5% [end];
     grid-template-rows:
       [row1-start] 35% [nav-start] 100px [third-line] calc(100% - 75px)
       [fourth-line];

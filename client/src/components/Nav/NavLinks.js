@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export default function NavLinks() {
+export default function NavLinks({ open }) {
   return (
-    <Links>
+    <Links open={open}>
       <Link to="/about">
         <li>about</li>
       </Link>
@@ -26,11 +26,17 @@ export default function NavLinks() {
 
 const Links = styled.ul`
   list-style: none;
-  display: flex;
-  flex-flow: column nowrap;
+  /* display: flex; */
+  flex-flow: column;
   align-items: center;
   background-color: grey;
-  display: none;
+  width: 100%;
+  /* position: fixed; */
+  /*
+not sure how to make the nav position fixed, as this messes with the mobile viewer
+  */
+
+  display: ${({ open }) => (open ? "flex" : "none")};
 
   li {
     color: #f86624;
@@ -40,6 +46,13 @@ const Links = styled.ul`
     &:hover {
       color: #f9c80e;
     }
+  }
+
+  .scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
   }
 
   @media (min-width: 680px) {

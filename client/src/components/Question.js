@@ -4,6 +4,7 @@ const questions = require("../QuestionData.json");
 
 export default function Question({ setQuestion, questionId, handleAnswer }) {
   const [activeQuestion, setActiveQuestion] = useState();
+
   useEffect(() => {
     setActiveQuestion(questions.find((q) => q.id === questionId));
   }, [questionId]);
@@ -12,13 +13,21 @@ export default function Question({ setQuestion, questionId, handleAnswer }) {
     if (activeQuestion !== undefined) {
       elmnt = document.getElementById(activeQuestion.name);
       elmnt.scrollIntoView();
+    } else if (activeQuestion === undefined && questionId === "submit") {
+      elmnt = document.getElementById("SubmitButton");
+      elmnt.scrollIntoView();
     }
   }, [activeQuestion]);
+  console.log("activeQuestion", activeQuestion);
+  // console.log("questionId", questionId);
+  // console.log("element", document.getElementById("SubmitButton"));
   return (
     <QuestionWrapper>
       {activeQuestion && (
         <CurrentQuestion id={activeQuestion.name}>
-          <QuestionText>{activeQuestion.text}</QuestionText>
+          <QuestionText>
+            <h3>{activeQuestion.text}</h3>
+          </QuestionText>
           {activeQuestion.options.map((option) => (
             <RadioWrapper key={option.label}>
               <Radio
@@ -29,7 +38,9 @@ export default function Question({ setQuestion, questionId, handleAnswer }) {
                 onChange={() => handleAnswer(option)}
               />
               <RadioLabel htmlFor={`${option.value}_${option.next}`}>
-                {option.label}
+                <div>
+                  <p>{option.label}</p>
+                </div>
               </RadioLabel>
             </RadioWrapper>
           ))}
@@ -44,7 +55,14 @@ const QuestionWrapper = styled.div`
   grid-column-end: main-end;
   grid-row-start: auto;
 
-  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+
+  margin-bottom: ${({ questionId }) => (questionId === "001" ? "0px" : "50px")};
+
+  width: 100%;
 
   p {
     color: gray;
@@ -52,7 +70,7 @@ const QuestionWrapper = styled.div`
 `;
 
 const CurrentQuestion = styled.div`
-  /* border: solid blue 2px; */
+  width: 100%;
 `;
 
 const QuestionText = styled.p`
@@ -62,23 +80,56 @@ const QuestionText = styled.p`
 `;
 
 const RadioWrapper = styled.div`
-  border: solid lightgray 1px;
-
-  border-radius: 5px;
-
+  display: flex;
+  justify-content: center;
+  /* border: solid lightgray 1px; */
+  border-radius: 8px;
   padding: 8px;
-  margin: 5px;
+  margin: 10px 0px 10px 0px;
+  width: 100%;
+  height: 100%;
+
+  background-color: #fbc9b5;
+
+  @media (min-width: 680px) {
+    height: fit-content;
+  }
 `;
 
 const RadioLabel = styled.label`
-  padding: 5px;
+  padding: 1px;
+  width: 100%;
+  height: 100%;
 
-  p {
-    color: gray;
+  div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+
+  &:checked div {
+    background-color: #ffd6bb;
+    border: 1px solid #ff6600;
   }
 `;
 
 const Radio = styled.input`
   cursor: pointer;
   color: gray;
+  visibility: hidden;
+  position: absolute;
+
+  div {
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+
+  &:checked div {
+    background-color: #ffd6bb;
+    border: 1px solid #ff6600;
+  }
 `;
